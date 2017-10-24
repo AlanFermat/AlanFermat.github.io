@@ -1,9 +1,144 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Alan Yu</title>
+  <title>Alan Yu</title>
+  <style type="text/css">
+    @import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,200);
+body {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.bg {
+  background-image: url(http://shrani.si/f/3A/JY/3mEc61r0/vr4v2bqroc.jpg);
+  background-size: cover;
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  display: block;
+  height: 110%;
+  width: 110%;
+  left: -10px;
+  position: fixed;
+  top: -10px;
+  right: 0;
+  z-index: 1;
+  transition: all 1000ms;
+  background-size: 100%;
+  background-position: center;
+}
+
+.logo {
+      background-image: url(http://www.iconsdb.com/icons/preview/icon-sets/black-wood/letter-y-xxl.png);
+      width: 90px;
+      height: 90px;
+      left: 50%;
+      position: relative;
+      margin-left: -10px;
+      margin-top: 10px;
+      background-size: 90px;
+    }
+
+.logo2 {
+      background-image: url(http://www.iconsdb.com/icons/preview/icon-sets/black-wood/letter-a-xxl.png);
+      width: 90px;
+      height: 90px;
+      left: 50%;
+      position: relative;
+      margin-left: -90px;
+      background-size: 90px;
+    }
+
+
+
+.cover:hover .bg {
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+  background-size: 110%;
+  background-position: center;
+}
+
+.title {
+  font-family: Raleway;
+  width: 300px;
+  height: 350px;
+  z-index: 3;
+  top: 50%;
+  margin-top: -175px;
+  left: 50%;
+  margin-left: -140px;
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  transition: all 1000ms;
+}
+
+.cover:hover .title {
+  filter: blur(0.5px);
+  -webkit-filter: blur(0.5px);
+}
+
+.title .text {
+  font-size: 35px;
+  font-weight: 200;
+  margin-top: 20px;
+}
+
+.title .desc {
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 30px;
+}
+
+
+
+/*social buttons*/
+.social {
+  position:fixed;
+  bottom:15px;
+  z-index:20;
+  text-align: center;
+  width:100%;
+}
+
+.social a {
+  font-family: Raleway;
+  color:white;
+  text-decoration:none;
+  margin-left:5px;
+  margin-right:5px;
+  transition: all 200ms;
+}
+
+.social a:hover {
+  font-size:19px;
+}
+  </style>
 </head>
 <body>
-	<p> Hi this is Alan Yu's personal website</p>
+  <div class="cover">
+  <div class="bg"></div>
+
+  <div class="title">
+    <div>
+      <div class="logo">
+      </div>
+      <div class="logo2">
+      </div>
+    </div>
+    <div class="text">
+      Hello World, my name is Alan Yu
+    </div>
+    <div class="desc">
+      <p>Welcome to my beautiful new website. </p>
+      <p>You can find out more about me by scrolling or clicking a button.</p>
+    </div>
+  </div>
+</div>
+
+<div class="social">
+  <a href="https://codepen.io/AlanFermat/"  target="_blank">Codepen</a>
+  <a href="https://github.com/AlanFermat"  target="_blank">Github</a>
+  <a href="https://www.linkedin.com/in/zhe-alan-yu-107560122/" target="_blank">Linkedin</a>
+</div>
+
 </body>
 </html>
