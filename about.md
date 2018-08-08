@@ -4,7 +4,7 @@ layout: page
 ---
 ![Profile Image]({{ site.url }}/{{ site.picture }})
 
-<p>My name is Alan (Zhe) Yu. I was born in Hangzhou, China and moved to Houston. Currently I'm a rising junior studying mathematics and computer science at <a href="https://www.rice.edu/">Rice University</a>, Houston, TX, USA. </p>
+<p>My name is Alan (Zhe) Yu. I came from Hangzhou, China and moved to Houston. Currently I'm a rising junior studying mathematics and computer science at <a href="https://www.rice.edu/">Rice University</a>, Houston, TX, USA. </p>
 
 <p> While enjoying coding, I'm also passionate about entrepreneurship and sports. I'm looking forward to dedicating my problem solving skills to enrich my community: </p>
 
