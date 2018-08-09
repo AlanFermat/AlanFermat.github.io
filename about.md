@@ -18,6 +18,7 @@ layout: page
 	<li>Team Member, Wiess Freshman Basketball Team - Played for my residential college in 2016</li>
 	<li>Player, IMLeague Basketball at Rice.</li>
 	<li>Referee, Rice Intramural Basketball</li>
+	<li>Been a guitar player for eight years -- Interested in classical guitar and fingerstyle (acoustic) guiar</li>
 </ul>
 
 <p> Note that the profile picture at the very top is the cover of my favorite album from my favorite rock band U2. If you are interested in their songs, check this <a href="https://en.wikipedia.org/wiki/The_Best_of_1980%E2%80%931990">album </a> out! Hope you enjoy. </p>
