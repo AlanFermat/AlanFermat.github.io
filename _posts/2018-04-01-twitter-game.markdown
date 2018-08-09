@@ -3,13 +3,14 @@ title: "Twitter Higher and Lower game"
 layout: post
 date: 2018-04-01
 <!-- tag: jekyll -->
-image: 
+image: https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/twitter.png?token=AVJwLAOkqLisa1yFOobeqxnHBiQJXa8vks5bdNw-wA%3D%3D
 headerImage: true
 projects: true
 hidden: true # don't count this post in blog pagination
 description: "A guessing game based on Twitter API."
 category: project
 author: Alan Yu
+comments: true
 externalLink: false
 
 ---
@@ -18,6 +19,12 @@ externalLink: false
 
 ## Twitter Lower and Higher 
 This is a web game developed in 24 hours during Rice Hackathon that will allow users to guess which person has a higher Twitter followers. 
+
+In each round, you will be given two celebrities or famous organizations. You need to guess which one of the two has a higher followers on twitter.
+
+If your answer is correct, you can go to the next round; otherwise, the game is over and you will receive your scores.
+
+Try to reach a higher score!
 
 ---
 
