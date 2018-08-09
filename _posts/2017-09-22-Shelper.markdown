@@ -19,7 +19,7 @@ externalLink: false
 
 ## Shelper
 
-This is an API built by 4 members during Rice Hackathon. 
+This is an API built by 4 members within 48 hours during Rice Hackathon. 
 
 This API connects emergency shelters with people who are looking for help during Hurricane Harvey. 
 

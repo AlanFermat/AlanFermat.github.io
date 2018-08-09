@@ -29,4 +29,4 @@ Try to reach a higher score!
 ---
 
 [Check it out](https://github.com/AlanFermat/twitterhigherlower) here.
-If you need some help, just [tell me](hhttps://github.com/AlanFermat/twitterhigherlower/issues).
+If you need some help, just [tell me](https://github.com/AlanFermat/twitterhigherlower/issues).

@@ -1,0 +1,18 @@
+---
+title: "Self-organized Map -- unsupervised neural network"
+layout: post
+date: 2018-03-21 22:44
+image: /assets/images/markdown.jpg
+headerImage: false
+tag:
+- Machine Learning
+- Neural Network
+- Self-organized Map
+- Unsupervised Learning
+star: true
+category: blog
+author: Alan Yu
+description: A brief tutorial of self-organized map and its implementation through Matlab
+---
+
+
