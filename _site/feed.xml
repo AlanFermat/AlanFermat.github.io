@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-08-09T13:08:33-05:00</updated><id>http://localhost:4000/</id><title type="html">Alan Yu</title><subtitle>A blog about technology and stuff related</subtitle><entry><title type="html">Twitter Higher and Lower game</title><link href="http://localhost:4000/twitter-game/" rel="alternate" type="text/html" title="Twitter Higher and Lower game" /><published>2018-04-01T00:00:00-05:00</published><updated>2018-04-01T00:00:00-05:00</updated><id>http://localhost:4000/twitter-game</id><content type="html" xml:base="http://localhost:4000/twitter-game/">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/AlanFermat/twitterhigherlower/master/ingame.png&quot; alt=&quot;Screenshot&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-08-09T13:36:27-05:00</updated><id>http://localhost:4000/</id><title type="html">Alan Yu</title><subtitle>A blog about technology and stuff related</subtitle><entry><title type="html">Twitter Higher and Lower game</title><link href="http://localhost:4000/twitter-game/" rel="alternate" type="text/html" title="Twitter Higher and Lower game" /><published>2018-04-01T00:00:00-05:00</published><updated>2018-04-01T00:00:00-05:00</updated><id>http://localhost:4000/twitter-game</id><content type="html" xml:base="http://localhost:4000/twitter-game/">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/AlanFermat/twitterhigherlower/master/ingame.png&quot; alt=&quot;Screenshot&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;twitter-lower-and-higher&quot;&gt;Twitter Lower and Higher&lt;/h2&gt;
 &lt;p&gt;This is a web game developed in 24 hours during Rice Hackathon that will allow users to guess which person has a higher Twitter followers.&lt;/p&gt;
@@ -62,13 +62,11 @@ If you need some help, just &lt;a href=&quot;https://github.com/AlanFermat/Shelp
 
 &lt;h3 id=&quot;technical-detail&quot;&gt;Technical detail&lt;/h3&gt;
 
-&lt;h4 id=&quot;components&quot;&gt;Components&lt;/h4&gt;
-
-&lt;p&gt;&lt;strong&gt;Image&lt;/strong&gt; on the left and &lt;strong&gt;Text&lt;/strong&gt; on the right:&lt;/p&gt;
+&lt;h4 id=&quot;1-components&quot;&gt;1. Components&lt;/h4&gt;
 
 &lt;div class=&quot;side-by-side&quot;&gt;
 	&lt;div class=&quot;toleft&quot;&gt;
-		&lt;img class=&quot;image&quot; src=&quot;}&quot; alt=&quot;Alt Text&quot; /&gt;
+		&lt;img class=&quot;image&quot; src=&quot;https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn1.jpg?token=AVJwLHHBZFQv6UECD-7Pd4Ip9VwGssqSks5bdb3YwA%3D%3D&quot; alt=&quot;Alt Text&quot; /&gt;
 		&lt;figcaption class=&quot;caption&quot;&gt;Illustration for one layer&lt;/figcaption&gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;toright&quot;&gt;
@@ -83,11 +81,11 @@ If you need some help, just &lt;a href=&quot;https://github.com/AlanFermat/Shelp
 
 &lt;hr /&gt;
 
-&lt;h4 id=&quot;forward-propagation&quot;&gt;Forward propagation&lt;/h4&gt;
+&lt;h4 id=&quot;2-forward-propagation&quot;&gt;2. Forward propagation&lt;/h4&gt;
 
 &lt;div class=&quot;side-by-side&quot;&gt;
 	&lt;div class=&quot;toleft&quot;&gt;
-		&lt;img class=&quot;image&quot; src=&quot;&quot; alt=&quot;Alt Text&quot; /&gt;
+		&lt;img class=&quot;image&quot; src=&quot;https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn2.jpg?token=AVJwLGguShLYI_cgDH-xisVwleByhtfAks5bdb3swA%3D%3D&quot; alt=&quot;Alt Text&quot; /&gt;
 		&lt;figcaption class=&quot;caption&quot;&gt;what does weight look like&lt;/figcaption&gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;toright&quot;&gt;
@@ -98,12 +96,12 @@ If you need some help, just &lt;a href=&quot;https://github.com/AlanFermat/Shelp
 
 &lt;div class=&quot;side-by-side&quot;&gt;
 	&lt;div class=&quot;toleft&quot;&gt;
-		&lt;img class=&quot;image&quot; src=&quot;&quot; alt=&quot;Alt Text&quot; /&gt;
+		&lt;img class=&quot;image&quot; src=&quot;https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn3.jpg?token=AVJwLDtliDrjnV7A7zs7noag5ZFYJErHks5bdb39wA%3D%3D&quot; alt=&quot;Alt Text&quot; /&gt;
 		&lt;figcaption class=&quot;caption&quot;&gt;transfer function&lt;/figcaption&gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;toright&quot;&gt;
-		&lt;p&gt; An transfer function a node defines the output of that node given an input or set of inputs&lt;/p&gt;
-		&lt;p&gt; Simplest transfer function is identity function which gives an identity map from the output of the previous layer to the input of the next layer. Researchers and scientists normally choose sigmoid function or tanh function as transfer functions. However, the choice of the transfer function is open to discuss and their relative advantages are discussed &lt;a href=&quot;https://papers.nips.cc/paper/874-how-to-choose-an-transfer-function.pdf&quot;&gt;here&lt;/a&gt;. &lt;/p&gt;
+		&lt;p&gt; An transfer function a node defines the output of that node given an input or set of inputs. &lt;/p&gt;
+		&lt;p&gt; The simplest transfer function is identity function which gives an identity map from the output of the previous layer to the input of the next layer. Researchers and scientists normally choose sigmoid function or tanh function as transfer functions. However, the choice of the transfer function is open to discuss and their relative advantages are discussed &lt;a href=&quot;https://papers.nips.cc/paper/874-how-to-choose-an-transfer-function.pdf&quot;&gt;here&lt;/a&gt;. &lt;/p&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
 
@@ -111,24 +109,25 @@ If you need some help, just &lt;a href=&quot;https://github.com/AlanFermat/Shelp
 
 &lt;div class=&quot;side-by-side&quot;&gt;
 	&lt;div class=&quot;toleft&quot;&gt;
-		&lt;img class=&quot;image&quot; src=&quot;&quot; alt=&quot;Alt Text&quot; /&gt;
+		&lt;img class=&quot;image&quot; src=&quot;https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn4.jpg?token=AVJwLPjNyGu_roaVx5FNAFYt0Yk8udkqks5bdb4JwA%3D%3D&quot; alt=&quot;Alt Text&quot; /&gt;
 		&lt;figcaption class=&quot;caption&quot;&gt;Mathematical formula for forward propagation&lt;/figcaption&gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;toright&quot;&gt;
-		&lt;p&gt; The mathematic formula for forward propagation &lt;/p&gt;
+		&lt;p&gt; The mathematic formula for forward propagation is shown on the left. You can iteratively do forward propagations for all layers. &lt;/p&gt;
+		&lt;p&gt;We can also rewrite the summation part by matrix multiplication. We will leave this as an exercise for our readers. &lt;/p&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Useful video for further illustration:&lt;/p&gt;
 &lt;iframe width=&quot;699&quot; height=&quot;393&quot; src=&quot;https://www.youtube.com/embed/UJwK6jAStmg&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
-&lt;h4 id=&quot;backward-propogation&quot;&gt;Backward propogation&lt;/h4&gt;
+&lt;h4 id=&quot;3-backward-propogation&quot;&gt;3. Backward propogation&lt;/h4&gt;
 
 &lt;p&gt;When we reach the output layer in our neural network, we want to see how good our predicted result is compared to the desired output. So we will designate the network with an error function (usually Mean Square Error or Edit Distance) to evaluate how well we are doing with our current weights values and structures.&lt;/p&gt;
 
 &lt;div class=&quot;side-by-side&quot;&gt;
 	&lt;div class=&quot;toleft&quot;&gt;
-		&lt;img class=&quot;image&quot; src=&quot;&quot; alt=&quot;Alt Text&quot; /&gt;
+		&lt;img class=&quot;image&quot; src=&quot;https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn5.jpg?token=AVJwLKIsW97pVNrSeFTJIVHVX3OGTIvrks5bdb4XwA%3D%3D&quot; alt=&quot;Alt Text&quot; /&gt;
 		&lt;figcaption class=&quot;caption&quot;&gt;Mathematical formula for forward propagation&lt;/figcaption&gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;toright&quot;&gt;
@@ -141,7 +140,7 @@ If you need some help, just &lt;a href=&quot;https://github.com/AlanFermat/Shelp
 &lt;p&gt;Useful video for further illustration:&lt;/p&gt;
 &lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://www.youtube.com/embed/GlcnxUlrtek&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
-&lt;h4 id=&quot;stopping-criteria&quot;&gt;Stopping criteria&lt;/h4&gt;
+&lt;h4 id=&quot;4-stopping-criteria&quot;&gt;4. Stopping criteria&lt;/h4&gt;
 
 &lt;p&gt;Before we start training our neural network, we will pre-define a stopping criteria for our network. For example, we can say if the error is within 10e-5 then we will stop the training or if we have gone 10e5 iterations then we stop training further.&lt;/p&gt;
 
@@ -153,9 +152,9 @@ If you need some help, just &lt;a href=&quot;https://github.com/AlanFermat/Shelp
 	&lt;li&gt;&lt;a href=&quot;https://www.researchgate.net/post/How_do_I_know_when_to_stop_training_a_neural_network&quot;&gt;Research Gate Discussion Forum&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&quot;implementation&quot;&gt;Implementation&lt;/h4&gt;
+&lt;h4 id=&quot;5-implementation&quot;&gt;5. Implementation&lt;/h4&gt;
 
-&lt;p&gt;I have a ready-to-go 3-layer neural network implemented in Matlab for you. It can be easily translated to Python using TensorFlow or pyTorch. You can also build your own neural networks.&lt;/p&gt;
+&lt;p&gt;I have a ready-to-go 3-layer neural network implemented in Matlab for you &lt;a href=&quot;https://github.com/AlanFermat/2R-robotic-arm-with-neural-network/blob/master/neuralNetwork.m&quot;&gt;here&lt;/a&gt;. It can be easily translated to Python using TensorFlow or pyTorch. You can also build your own neural networks.&lt;/p&gt;
 
 &lt;ul&gt; 
 	&lt;li&gt;A tutorial for TensorFlow users: &lt;a href=&quot;http://web.stanford.edu/class/cs20si/&quot;&gt; Stanford CS 20SI&lt;/a&gt;&lt;/li&gt;
@@ -171,6 +170,38 @@ If you need some help, just &lt;a href=&quot;https://github.com/AlanFermat/Shelp
 &lt;p&gt;If we expand matrix multiplication, it is easy to see that the whole process of forward propogation is equivalent to using a polynomial to approximate the target function. By Stone-Weierstrass theorem, we have that neural network has the ability to approximate functions satisfying specific requirements (some constraints including continuity, domain, etc.).&lt;/p&gt;
 
 &lt;p&gt;There is a formal theorem supporting this! The &lt;a href=&quot;https://en.wikipedia.org/wiki/Universal_approximation_theorem&quot;&gt;universal approximation theorem &lt;/a&gt; states that a feed-forward network with a single hidden layer containing a finite number of neurons can approximate continuous functions on compact subsets of n-dimensional Euclidean space, under mild assumptions on the transfer function. If you are interested in this theorem, you probably wanna read the following:&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;https://blog.goodaudience.com/neural-networks-part-1-a-simple-proof-of-the-universal-approximation-theorem-b7864964dbd3&quot;&gt;blog&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.101.2647&amp;amp;rep=rep1&amp;amp;type=pdf&quot;&gt;Paper&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;how-does-it-work&quot;&gt;How does it work?&lt;/h2&gt;
+
+&lt;p&gt;We will illustrate the application of a simple 3-layer aritifical neural network in approximating inverse function &lt;strong&gt;f(x) = 1/x&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Source codes are uploaded &lt;a href=&quot;https://github.com/AlanFermat/Blogs/tree/master/OneOverX&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;side-by-side&quot;&gt;
+	&lt;div class=&quot;toleft&quot;&gt;
+		&lt;img class=&quot;image&quot; src=&quot;https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn6.jpg?token=AVJwLHJIsRM96GtAuJpZ0vVE1cDVIFYsks5bdcP0wA%3D%3D&quot; alt=&quot;Alt Text&quot; /&gt;
+		&lt;figcaption class=&quot;caption&quot;&gt;Neural network parameters&lt;/figcaption&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;toright&quot;&gt;
+		&lt;p&gt; We will use the parameters as suggested by the left to train and test the data. &lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;side-by-side&quot;&gt;
+	&lt;div class=&quot;toleft&quot;&gt;
+		&lt;img class=&quot;image&quot; src=&quot;https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn7.jpg?token=AVJwLBuzL9xSJPo5uRp9re3QcQoSZTOjks5bdcQCwA%3D%3D&quot; alt=&quot;Alt Text&quot; /&gt;
+		&lt;figcaption class=&quot;caption&quot;&gt;Error plot&lt;/figcaption&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;toright&quot;&gt;
+		&lt;img class=&quot;image&quot; src=&quot;https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn8.jpg?token=AVJwLMu4W3cpd_kX4uJw-m8EA737kUNNks5bdcQOwA%3D%3D&quot; alt=&quot;Alt Text&quot; /&gt;
+		&lt;figcaption class=&quot;caption&quot;&gt;Predicted VS Desired&lt;/figcaption&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
 
 &lt;h2 id=&quot;other-applications&quot;&gt;Other applications&lt;/h2&gt;
 

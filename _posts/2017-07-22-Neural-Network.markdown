@@ -51,14 +51,11 @@ For those who are interested in Long-short Term Memory Neural Network, Convoluti
 
 ### Technical detail
 
-#### Components
-
-**Image** on the left and **Text** on the right:
-
+#### 1. Components
 
 <div class="side-by-side">
 	<div class="toleft">
-		<img class="image" src="{{ page.insert1 }}}" alt="Alt Text">
+		<img class="image" src="https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn1.jpg?token=AVJwLHHBZFQv6UECD-7Pd4Ip9VwGssqSks5bdb3YwA%3D%3D" alt="Alt Text">
 		<figcaption class="caption">Illustration for one layer</figcaption>
 	</div>
 	<div class="toright">
@@ -73,11 +70,11 @@ Useful video explaning neural networks in more details:
 
 ------- 
 
-#### Forward propagation
+#### 2. Forward propagation
 
 <div class="side-by-side">
 	<div class="toleft">
-		<img class="image" src="{{ page.insert2 }}" alt="Alt Text">
+		<img class="image" src="https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn2.jpg?token=AVJwLGguShLYI_cgDH-xisVwleByhtfAks5bdb3swA%3D%3D" alt="Alt Text">
 		<figcaption class="caption">what does weight look like</figcaption>
 	</div>
 	<div class="toright">
@@ -88,12 +85,12 @@ Useful video explaning neural networks in more details:
 
 <div class="side-by-side">
 	<div class="toleft">
-		<img class="image" src="{{ page.insert3 }}" alt="Alt Text">
+		<img class="image" src="https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn3.jpg?token=AVJwLDtliDrjnV7A7zs7noag5ZFYJErHks5bdb39wA%3D%3D" alt="Alt Text">
 		<figcaption class="caption">transfer function</figcaption>
 	</div>
 	<div class="toright">
-		<p> An transfer function a node defines the output of that node given an input or set of inputs</p>
-		<p> Simplest transfer function is identity function which gives an identity map from the output of the previous layer to the input of the next layer. Researchers and scientists normally choose sigmoid function or tanh function as transfer functions. However, the choice of the transfer function is open to discuss and their relative advantages are discussed <a href="https://papers.nips.cc/paper/874-how-to-choose-an-transfer-function.pdf">here</a>. </p>
+		<p> An transfer function a node defines the output of that node given an input or set of inputs. </p>
+		<p> The simplest transfer function is identity function which gives an identity map from the output of the previous layer to the input of the next layer. Researchers and scientists normally choose sigmoid function or tanh function as transfer functions. However, the choice of the transfer function is open to discuss and their relative advantages are discussed <a href="https://papers.nips.cc/paper/874-how-to-choose-an-transfer-function.pdf">here</a>. </p>
 	</div>
 </div>
 
@@ -102,24 +99,25 @@ In forward propagation, we will first aggregate the results calculated from the 
 
 <div class="side-by-side">
 	<div class="toleft">
-		<img class="image" src="{{ page.insert4 }}" alt="Alt Text">
+		<img class="image" src="https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn4.jpg?token=AVJwLPjNyGu_roaVx5FNAFYt0Yk8udkqks5bdb4JwA%3D%3D" alt="Alt Text">
 		<figcaption class="caption">Mathematical formula for forward propagation</figcaption>
 	</div>
 	<div class="toright">
-		<p> The mathematic formula for forward propagation </p>
+		<p> The mathematic formula for forward propagation is shown on the left. You can iteratively do forward propagations for all layers. </p>
+		<p>We can also rewrite the summation part by matrix multiplication. We will leave this as an exercise for our readers. </p>
 	</div>
 </div>
 
 Useful video for further illustration:
 <iframe width="699" height="393" src="https://www.youtube.com/embed/UJwK6jAStmg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-#### Backward propogation
+#### 3. Backward propogation
 
 When we reach the output layer in our neural network, we want to see how good our predicted result is compared to the desired output. So we will designate the network with an error function (usually Mean Square Error or Edit Distance) to evaluate how well we are doing with our current weights values and structures.
 
 <div class="side-by-side">
 	<div class="toleft">
-		<img class="image" src="{{ page.insert5 }}" alt="Alt Text">
+		<img class="image" src="https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn5.jpg?token=AVJwLKIsW97pVNrSeFTJIVHVX3OGTIvrks5bdb4XwA%3D%3D" alt="Alt Text">
 		<figcaption class="caption">Mathematical formula for forward propagation</figcaption>
 	</div>
 	<div class="toright">
@@ -132,7 +130,7 @@ When we reach the output layer in our neural network, we want to see how good ou
 Useful video for further illustration:
 <iframe width="640" height="360" src="https://www.youtube.com/embed/GlcnxUlrtek" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-#### Stopping criteria
+#### 4. Stopping criteria
 
 Before we start training our neural network, we will pre-define a stopping criteria for our network. For example, we can say if the error is within 10e-5 then we will stop the training or if we have gone 10e5 iterations then we stop training further.
 
@@ -146,9 +144,9 @@ Stopping criteria is crucial since we need to set a goal for our network to reac
 
 
 
-#### Implementation
+#### 5. Implementation
 
-I have a ready-to-go 3-layer neural network implemented in Matlab for you. It can be easily translated to Python using TensorFlow or pyTorch. You can also build your own neural networks. 
+I have a ready-to-go 3-layer neural network implemented in Matlab for you <a href="https://github.com/AlanFermat/2R-robotic-arm-with-neural-network/blob/master/neuralNetwork.m">here</a>. It can be easily translated to Python using TensorFlow or pyTorch. You can also build your own neural networks. 
 
 <ul> 
 	<li>A tutorial for TensorFlow users: <a href="http://web.stanford.edu/class/cs20si/"> Stanford CS 20SI</a></li>
@@ -165,8 +163,37 @@ If we expand matrix multiplication, it is easy to see that the whole process of 
 
 There is a formal theorem supporting this! The <a href="https://en.wikipedia.org/wiki/Universal_approximation_theorem">universal approximation theorem </a> states that a feed-forward network with a single hidden layer containing a finite number of neurons can approximate continuous functions on compact subsets of n-dimensional Euclidean space, under mild assumptions on the transfer function. If you are interested in this theorem, you probably wanna read the following:
 
+<ul>
+	<li><a href="https://blog.goodaudience.com/neural-networks-part-1-a-simple-proof-of-the-universal-approximation-theorem-b7864964dbd3">blog</a></li>
+	<li><a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.101.2647&rep=rep1&type=pdf">Paper</a></li>
+</ul>
 
+## How does it work?
 
+We will illustrate the application of a simple 3-layer aritifical neural network in approximating inverse function __f(x) = 1/x__.
+
+Source codes are uploaded <a href="https://github.com/AlanFermat/Blogs/tree/master/OneOverX">here</a>.
+
+<div class="side-by-side">
+	<div class="toleft">
+		<img class="image" src="https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn6.jpg?token=AVJwLHJIsRM96GtAuJpZ0vVE1cDVIFYsks5bdcP0wA%3D%3D" alt="Alt Text">
+		<figcaption class="caption">Neural network parameters</figcaption>
+	</div>
+	<div class="toright">
+		<p> We will use the parameters as suggested by the left to train and test the data. </p>
+	</div>
+</div>
+
+<div class="side-by-side">
+	<div class="toleft">
+		<img class="image" src="https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn7.jpg?token=AVJwLBuzL9xSJPo5uRp9re3QcQoSZTOjks5bdcQCwA%3D%3D" alt="Alt Text">
+		<figcaption class="caption">Error plot</figcaption>
+	</div>
+	<div class="toright">
+		<img class="image" src="https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn8.jpg?token=AVJwLMu4W3cpd_kX4uJw-m8EA737kUNNks5bdcQOwA%3D%3D" alt="Alt Text">
+		<figcaption class="caption">Predicted VS Desired</figcaption>
+	</div>
+</div>
 
 
 ## Other applications
@@ -180,6 +207,8 @@ Check this out:
 https://www.tandfonline.com/doi/full/10.1080/20964471.2017.1397411
 
 http://math.uchicago.edu/~may/REU2016/REUPapers/Gaddy.pdf
+
+
 
 
 
