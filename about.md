@@ -6,7 +6,7 @@ layout: page
 
 <p>My name is Alan (Zhe) Yu. I came from Hangzhou, China and moved to Houston. Currently I'm a rising junior studying mathematics and computer science at <a href="https://www.rice.edu/">Rice University</a>, Houston, TX, USA. </p>
 
-<p> While enjoying coding, I'm also passionate about entrepreneurship and sports. I'm looking forward to dedicating my problem solving skills to enrich my community: </p>
+<p> While enjoying coding, I'm also passionate about entrepreneurship, sports and music. I'm looking forward to dedicating my problem solving skills to enrich my community: </p>
 
 <ul class="skill-list">
 	<li>Cofounder of <a href = "https://www.owlspark.com/startup-teams/">Nutri-Action</a></li>
@@ -19,4 +19,6 @@ layout: page
 	<li>Player, IMLeague Basketball at Rice.</li>
 	<li>Referee, Rice Intramural Basketball</li>
 </ul>
+
+<p> Note that the profile picture at the very top is the cover of my favorite album from my favorite rock band U2. If you are interested in their songs, check this <a href="https://en.wikipedia.org/wiki/The_Best_of_1980%E2%80%931990">album </a> out! Hope you enjoy. </p>
 
