@@ -14,7 +14,7 @@ picture: assets/images/profile.jpg
 # and specify source (external or local).
 resume: true
 resume-external: true
-resume-url: https://google.com/?q=my+resume
+resume-url: pdf/AlanYu_Resume.pdf 
 
 # url: https://koppl.in/indigo
 url: http://imalanyu.com
