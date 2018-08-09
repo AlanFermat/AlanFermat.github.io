@@ -168,7 +168,7 @@ There is a formal theorem supporting this! The <a href="https://en.wikipedia.org
 	<li><a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.101.2647&rep=rep1&type=pdf">Paper</a></li>
 </ul>
 
-## How does it work?
+## What is an example?
 
 We will illustrate the application of a simple 3-layer aritifical neural network in approximating inverse function __f(x) = 1/x__.
 

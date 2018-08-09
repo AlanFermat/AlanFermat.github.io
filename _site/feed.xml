@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-08-09T13:36:27-05:00</updated><id>http://localhost:4000/</id><title type="html">Alan Yu</title><subtitle>A blog about technology and stuff related</subtitle><entry><title type="html">Twitter Higher and Lower game</title><link href="http://localhost:4000/twitter-game/" rel="alternate" type="text/html" title="Twitter Higher and Lower game" /><published>2018-04-01T00:00:00-05:00</published><updated>2018-04-01T00:00:00-05:00</updated><id>http://localhost:4000/twitter-game</id><content type="html" xml:base="http://localhost:4000/twitter-game/">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/AlanFermat/twitterhigherlower/master/ingame.png&quot; alt=&quot;Screenshot&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-08-09T13:37:32-05:00</updated><id>http://localhost:4000/</id><title type="html">Alan Yu</title><subtitle>A blog about technology and stuff related</subtitle><entry><title type="html">Twitter Higher and Lower game</title><link href="http://localhost:4000/twitter-game/" rel="alternate" type="text/html" title="Twitter Higher and Lower game" /><published>2018-04-01T00:00:00-05:00</published><updated>2018-04-01T00:00:00-05:00</updated><id>http://localhost:4000/twitter-game</id><content type="html" xml:base="http://localhost:4000/twitter-game/">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/AlanFermat/twitterhigherlower/master/ingame.png&quot; alt=&quot;Screenshot&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;twitter-lower-and-higher&quot;&gt;Twitter Lower and Higher&lt;/h2&gt;
 &lt;p&gt;This is a web game developed in 24 hours during Rice Hackathon that will allow users to guess which person has a higher Twitter followers.&lt;/p&gt;
@@ -176,7 +176,7 @@ If you need some help, just &lt;a href=&quot;https://github.com/AlanFermat/Shelp
 	&lt;li&gt;&lt;a href=&quot;http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.101.2647&amp;amp;rep=rep1&amp;amp;type=pdf&quot;&gt;Paper&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;how-does-it-work&quot;&gt;How does it work?&lt;/h2&gt;
+&lt;h2 id=&quot;what-is-an-example&quot;&gt;What is an example?&lt;/h2&gt;
 
 &lt;p&gt;We will illustrate the application of a simple 3-layer aritifical neural network in approximating inverse function &lt;strong&gt;f(x) = 1/x&lt;/strong&gt;.&lt;/p&gt;
 
