@@ -3,7 +3,7 @@ title: "Twitter Higher and Lower game"
 layout: post
 date: 2018-04-01
 <!-- tag: jekyll -->
-image: https://github.com/AlanFermat/AlanFermat.github.io/blob/master/assets/images/twitter.jpg
+image: 
 headerImage: true
 projects: true
 hidden: true # don't count this post in blog pagination
