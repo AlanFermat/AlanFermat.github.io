@@ -2,8 +2,8 @@
 title: "Self-organized Map -- unsupervised neural network"
 layout: post
 date: 2018-03-21 22:44
-image: /assets/images/markdown.jpg
-headerImage: false
+image: /assets/images/som1.jpg
+headerImage: true
 tag:
 - Machine Learning
 - Neural Network
