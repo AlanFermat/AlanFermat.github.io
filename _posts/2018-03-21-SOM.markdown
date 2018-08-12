@@ -15,4 +15,10 @@ author: Alan Yu
 description: A brief tutorial of self-organized map and its implementation through Matlab
 ---
 
+## What is unsupervised learning?
+
+<a href="https://en.wikipedia.org/wiki/Unsupervised_learning">Unsupervised machine learning</a> is the machine learning task of inferring a function that describes the structure of "unlabeled" data. The goal for unsupervised learning is to detect some pattern behind a mass of data without any priori knowledge about the data. Sounds like roman policier? That's right!
+
+Since the beginning of this field, a lot of unsupervised learning algorithms has been developed and applied widely. 
+
 
