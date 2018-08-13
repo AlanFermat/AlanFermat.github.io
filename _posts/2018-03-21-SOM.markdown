@@ -44,7 +44,7 @@ In this neural network, the output layer is a grid in which each neuron represen
 		<figcaption class="caption">Topological preserving</figcaption>
 	</div>
 	<div class="toright">
-		<p> The most magic part about self-organizing map is that it is topologically preserved meaning that the neighbors of the original data point __A__ will be mapped to the neighbors of __A__'s representation in the output grid.</p>
+		<p> The most magic part about self-organizing map is that it is topologically preserved meaning that the neighbors of the original data point *A* will be mapped to the neighbors of *A's* representation in the output grid.</p>
 		<p> This property makes self-organizing map unique among all clustering algorithms. Since topological preservation can help the neural network recognize the patterns easily when the number of clusters are huge, self-organizing map is especially good at recognizing terrains.</p>
 	</div>
 	<div class="toleft">
@@ -52,7 +52,8 @@ In this neural network, the output layer is a grid in which each neuron represen
 		<figcaption class="caption">Mathematical formula</figcaption>
 	</div>
 	<div class="toright">
-		<p> Here comes the mathematical formula for SOM. </p>
+		<p> Here comes the mathematical formula for SOM. As we can see, one round of training consists of two steps. The first one is competition in which we will choose a prototype closest to the given pattern based on the information we have. At the second step, we update our weight based on the a predefined distance of our prototype from the original pattern. </p>
+		<p>Note that the *h* function that is used in the updating is analogous to gradient descent in artificial neural networks. However, normally we will use Manhattan distance here instead of Euclidean to preserve the topological structure. </p>
 	</div>
 
 </div>
@@ -86,13 +87,15 @@ Source codes are uploaded <a href="afs">here</a>.
 	<div class="toleft">
 		<img class="image" src="https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/som6.jpg?token=AVJwLKYndh0Ze-Z5DCEeIXuX9kz3xsKkks5be01GwA%3D%3D" alt="Alt Text">
 		<figcaption class="caption">visualization of the grid after 250k training steps</figcaption>
+	</div>
+	<div class="torights">
 		<p> Note that in this graph, blue dots are generated points that are to be clustered. Red dots represent prototypes For illustration, we connect them by black solid lines. </p>
 	</div>
 </div>
 
-From the result, we can see that most prototypes are bundled and gathered to four corners. Because there are no cluster in the middle, the grid is stretched out tightly making sure maximum of prototypes can match the data points optimally.
+<p>From the result, we can see that most prototypes are bundled and gathered to four corners. Because there are no cluster in the middle, the grid is stretched out tightly making sure maximum of prototypes can match the data points optimally.</p>
 
-Source code is <a href="https://github.com/AlanFermat/Blogs/blob/master/SOM/SOM.m">here</a>.
+<p>Source code is <a href="https://github.com/AlanFermat/Blogs/blob/master/SOM/SOM.m">here</a>.</p>
 
 ## Reference
 
