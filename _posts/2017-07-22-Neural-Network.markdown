@@ -168,7 +168,7 @@ There is a formal theorem supporting this! The <a href="https://en.wikipedia.org
 	<li><a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.101.2647&rep=rep1&type=pdf">Paper</a></li>
 </ul>
 
-## What is an example?
+## Can you show me an example?
 
 We will illustrate the application of a simple 3-layer aritifical neural network in approximating inverse function __f(x) = 1/x__.
 
@@ -195,10 +195,9 @@ Source codes are uploaded <a href="https://github.com/AlanFermat/Blogs/tree/mast
 	</div>
 </div>
 
+## What are other applications?
 
-## Other applications
-
-Use 3-layer neural network to teach a robotic arm how to draw certain pictures. 
+We also use a 3-layer neural network to teach a robotic arm how to draw certain pictures. The result is quite fun!
 
 Check this out: 
 <a href = "https://github.com/AlanFermat/2R-robotic-arm-with-neural-network"> ANN application in Robotics </a>
