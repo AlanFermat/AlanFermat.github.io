@@ -55,7 +55,7 @@ For those who are interested in Long-short Term Memory Neural Network, Convoluti
 
 <div class="side-by-side">
 	<div class="toleft">
-		<img class="image" src="https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn1.jpg?token=AVJwLHHBZFQv6UECD-7Pd4Ip9VwGssqSks5bdb3YwA%3D%3D" alt="Alt Text">
+		<img class="image" src="https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn1.jpg?token=AVJwLBpmd6gXR_BVlTAz-d4xMjGIs5Nlks5biWiowA%3D%3D" alt="Alt Text">
 		<figcaption class="caption">Illustration for one layer</figcaption>
 	</div>
 	<div class="toright">
@@ -74,7 +74,7 @@ Useful video explaning neural networks in more details:
 
 <div class="side-by-side">
 	<div class="toleft">
-		<img class="image" src="https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn2.jpg?token=AVJwLGguShLYI_cgDH-xisVwleByhtfAks5bdb3swA%3D%3D" alt="Alt Text">
+		<img class="image" src="https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn2.jpg?token=AVJwLP166jXelmcnEtHN5bYZQtK81wqrks5biWi2wA%3D%3D" alt="Alt Text">
 		<figcaption class="caption">what does weight look like</figcaption>
 	</div>
 	<div class="toright">
@@ -85,7 +85,7 @@ Useful video explaning neural networks in more details:
 
 <div class="side-by-side">
 	<div class="toleft">
-		<img class="image" src="https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn3.jpg?token=AVJwLDtliDrjnV7A7zs7noag5ZFYJErHks5bdb39wA%3D%3D" alt="Alt Text">
+		<img class="image" src="https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn3.jpg?token=AVJwLEewEUAJHP4oRkcshsRIMWuQO8ZXks5biWjIwA%3D%3D" alt="Alt Text">
 		<figcaption class="caption">transfer function</figcaption>
 	</div>
 	<div class="toright">
@@ -99,7 +99,7 @@ In forward propagation, we will first aggregate the results calculated from the 
 
 <div class="side-by-side">
 	<div class="toleft">
-		<img class="image" src="https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn4.jpg?token=AVJwLPjNyGu_roaVx5FNAFYt0Yk8udkqks5bdb4JwA%3D%3D" alt="Alt Text">
+		<img class="image" src="https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn4.jpg?token=AVJwLLR8sDLc2EdpCB3qLE_H53Dy-JRcks5biWjWwA%3D%3D" alt="Alt Text">
 		<figcaption class="caption">Mathematical formula for forward propagation</figcaption>
 	</div>
 	<div class="toright">
@@ -117,7 +117,7 @@ When we reach the output layer in our neural network, we want to see how good ou
 
 <div class="side-by-side">
 	<div class="toleft">
-		<img class="image" src="https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn5.jpg?token=AVJwLKIsW97pVNrSeFTJIVHVX3OGTIvrks5bdb4XwA%3D%3D" alt="Alt Text">
+		<img class="image" src="https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn5.jpg?token=AVJwLKZ3RCasijyD03iMIaJeRrmQ4nXzks5biWjkwA%3D%3D" alt="Alt Text">
 		<figcaption class="caption">Mathematical formula for forward propagation</figcaption>
 	</div>
 	<div class="toright">
@@ -176,7 +176,7 @@ Source codes are uploaded <a href="https://github.com/AlanFermat/Blogs/tree/mast
 
 <div class="side-by-side">
 	<div class="toleft">
-		<img class="image" src="https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn6.jpg?token=AVJwLHJIsRM96GtAuJpZ0vVE1cDVIFYsks5bdcP0wA%3D%3D" alt="Alt Text">
+		<img class="image" src="https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn6.jpg?token=AVJwLMuPNZoWLq5zpUZJUMSDX5yywQPbks5biWjywA%3D%3D" alt="Alt Text">
 		<figcaption class="caption">Neural network parameters</figcaption>
 	</div>
 	<div class="toright">
@@ -186,11 +186,11 @@ Source codes are uploaded <a href="https://github.com/AlanFermat/Blogs/tree/mast
 
 <div class="side-by-side">
 	<div class="toleft">
-		<img class="image" src="https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn7.jpg?token=AVJwLBuzL9xSJPo5uRp9re3QcQoSZTOjks5bdcQCwA%3D%3D" alt="Alt Text">
+		<img class="image" src="https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn7.jpg?token=AVJwLOpITbln0kdCOkIuQuMrbAbq45vNks5biWkGwA%3D%3D" alt="Alt Text">
 		<figcaption class="caption">Error plot</figcaption>
 	</div>
 	<div class="toright">
-		<img class="image" src="https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn8.jpg?token=AVJwLMu4W3cpd_kX4uJw-m8EA737kUNNks5bdcQOwA%3D%3D" alt="Alt Text">
+		<img class="image" src="https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn8.jpg?token=AVJwLC9qJ1XBF93Hb56tI9okGR5Cb3HQks5biWkawA%3D%3D" alt="Alt Text">
 		<figcaption class="caption">Predicted VS Desired</figcaption>
 	</div>
 </div>
