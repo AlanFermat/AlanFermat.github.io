@@ -1,0 +1,33 @@
+---
+title: "Shelper"
+layout: post
+date: 2017-09-22
+
+<!-- tag: jekyll -->
+image: https://raw.githubusercontent.com/AlanFermat/Shelper/master/logo.png
+headerImage: true
+projects: true
+hidden: true # don't count this post in blog pagination
+description: "An API for communicating people that need shelters and the available shelters during Harvey Hurricane"
+category: project
+author: Alan Yu
+externalLink: false
+
+---
+
+![Screenshot](https://raw.githubusercontent.com/AlanFermat/Shelper/master/frontend/shelper.jpg)
+
+## Shelper
+
+This is an API built by 4 members within 48 hours during Rice Hackathon. 
+
+This API connects emergency shelters with people who are looking for help during Hurricane Harvey. 
+
+I implemented customized Google Map API (JSON and react.js) and visualized the live data on the screen from database (MongoDB). We deployed this API as a web app via Flask.
+
+A user can use this app to login, either seeking for active shelters or donating necessities to the nearby shelters. 
+
+---
+
+[Check it out](https://github.com/AlanFermat/Shelper) here.
+If you need some help, just [tell me](https://github.com/AlanFermat/Shelper/issues).
