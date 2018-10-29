@@ -55,7 +55,7 @@ For those who are interested in Long-short Term Memory Neural Network, Convoluti
 
 <div class="side-by-side">
 	<div class="toleft">
-		<img class="image" src="https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn1.jpg?raw=true" alt="Alt Text">
+		<img class="image" src="https://github.com/AlanFermat/AlanFermat.github.io/blob/master/assets/images/nn1.jpg?raw=true" alt="Alt Text">
 		<figcaption class="caption">Illustration for one layer</figcaption>
 	</div>
 	<div class="toright">
@@ -74,7 +74,7 @@ Useful video explaning neural networks in more details:
 
 <div class="side-by-side">
 	<div class="toleft">
-		<img class="image" src="https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn2.jpg?raw=true" alt="Alt Text">
+		<img class="image" src="https://github.com/AlanFermat/AlanFermat.github.io/blob/master/assets/images/nn2.jpg?raw=true" alt="Alt Text">
 		<figcaption class="caption">what does weight look like</figcaption>
 	</div>
 	<div class="toright">
@@ -85,7 +85,7 @@ Useful video explaning neural networks in more details:
 
 <div class="side-by-side">
 	<div class="toleft">
-		<img class="image" src="https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn3.jpg?raw=true" alt="Alt Text">
+		<img class="image" src="https://github.com/AlanFermat/AlanFermat.github.io/blob/master/assets/images/nn3.jpg?raw=true" alt="Alt Text">
 		<figcaption class="caption">transfer function</figcaption>
 	</div>
 	<div class="toright">
@@ -99,7 +99,7 @@ In forward propagation, we will first aggregate the results calculated from the 
 
 <div class="side-by-side">
 	<div class="toleft">
-		<img class="image" src="https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn4.jpg?raw=true" alt="Alt Text">
+		<img class="image" src="https://github.com/AlanFermat/AlanFermat.github.io/blob/master/assets/images/nn4.jpg?raw=true" alt="Alt Text">
 		<figcaption class="caption">Mathematical formula for forward propagation</figcaption>
 	</div>
 	<div class="toright">
@@ -117,7 +117,7 @@ When we reach the output layer in our neural network, we want to see how good ou
 
 <div class="side-by-side">
 	<div class="toleft">
-		<img class="image" src="https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn5.jpg?raw=true" alt="Alt Text">
+		<img class="image" src="https://github.com/AlanFermat/AlanFermat.github.io/blob/master/assets/images/nn5.jpg?raw=true" alt="Alt Text">
 		<figcaption class="caption">Mathematical formula for forward propagation</figcaption>
 	</div>
 	<div class="toright">
@@ -176,7 +176,7 @@ Source codes are uploaded <a href="https://github.com/AlanFermat/Blogs/tree/mast
 
 <div class="side-by-side">
 	<div class="toleft">
-		<img class="image" src="https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn6.jpg?raw=true" alt="Alt Text">
+		<img class="image" src="https://github.com/AlanFermat/AlanFermat.github.io/blob/master/assets/images/nn6.jpg?raw=true" alt="Alt Text">
 		<figcaption class="caption">Neural network parameters</figcaption>
 	</div>
 	<div class="toright">
@@ -186,11 +186,11 @@ Source codes are uploaded <a href="https://github.com/AlanFermat/Blogs/tree/mast
 
 <div class="side-by-side">
 	<div class="toleft">
-		<img class="image" src="https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn7.jpg?raw=true" alt="Alt Text">
+		<img class="image" src="https://github.com/AlanFermat/AlanFermat.github.io/blob/master/assets/images/nn7.jpg?raw=true" alt="Alt Text">
 		<figcaption class="caption">Error plot</figcaption>
 	</div>
 	<div class="toright">
-		<img class="image" src="https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn8.jpg?raw=true" alt="Alt Text">
+		<img class="image" src="https://github.com/AlanFermat/AlanFermat.github.io/blob/master/assets/images/nn8.jpg?raw=true" alt="Alt Text">
 		<figcaption class="caption">Predicted VS Desired</figcaption>
 	</div>
 </div>
