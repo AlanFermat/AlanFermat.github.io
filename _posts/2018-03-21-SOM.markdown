@@ -32,7 +32,7 @@ In this neural network, the output layer is a grid in which each neuron represen
 
 <div class="side-by-side">
 	<div class="toleft">
-		<img class="image" src="https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/som2.jpg?token=AVJwLHHpXusk0IH0YvzSLR2GoEOwLCgvks5biVVlwA%3D%3D" alt="Alt Text">
+		<img class="image" src="https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/som2.jpg?raw=true" alt="Alt Text">
 		<figcaption class="caption">Illustrion of SOM</figcaption>
 	</div>
 	<div class="toright">
@@ -40,7 +40,7 @@ In this neural network, the output layer is a grid in which each neuron represen
 		<p>As we can see from the left, each data point is mapped to a neuron that best approximates the value of that data point. Notice that the learning process is to adjust weights so that we minimize the "distance" between the input data point and the neuron that represents it. </p>
 	</div>
 	<div class="toleft">
-		<img class="image" src="https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/som3.jpg?token=AVJwLIqVvpCIPeHckcF79k1eApSPG1D9ks5biVWIwA%3D%3D" alt="Alt Text">
+		<img class="image" src="https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/som3.jpg?raw=true" alt="Alt Text">
 		<figcaption class="caption">Topological preserving</figcaption>
 	</div>
 	<div class="toright">
@@ -48,7 +48,7 @@ In this neural network, the output layer is a grid in which each neuron represen
 		<p> This property makes self-organizing map unique among all clustering algorithms. Since topological preservation can help the neural network recognize the patterns easily when the number of clusters are huge, self-organizing map is especially good at recognizing terrains.</p>
 	</div>
 	<div class="toleft">
-		<img class="image" src="https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/som4.jpg?token=AVJwLBcoBsbgFrqBIKWus2khaBS7Lx9Lks5biVWYwA%3D%3D" alt="Alt Text">
+		<img class="image" src="https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/som4.jpg?raw=true" alt="Alt Text">
 		<figcaption class="caption">Mathematical formula</figcaption>
 	</div>
 	<div class="toright">
@@ -75,7 +75,7 @@ Source codes are uploaded <a href="afs">here</a>.
 
 <div class="side-by-side">
 	<div class="toleft">
-		<img class="image" src="https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/som5.jpg?token=AVJwLKJWPTumwJuQM6y70DrMZt6H4iA8ks5biVWpwA%3D%3D" alt="Alt Text">
+		<img class="image" src="https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/som5.jpg?raw=true" alt="Alt Text">
 		<figcaption class="caption">Neural network parameters</figcaption>
 	</div>
 	<div class="toright">
@@ -85,7 +85,7 @@ Source codes are uploaded <a href="afs">here</a>.
 
 <div class="side-by-side">
 	<div class="toleft">
-		<img class="image" src="https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/som6.jpg?token=AVJwLA-LaT7SZDIk6aSCIkYuPMA3GJYZks5biVW5wA%3D%3D" alt="Alt Text">
+		<img class="image" src="https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/som6.jpg?raw=true" alt="Alt Text">
 		<figcaption class="caption">visualization of the grid after 250k training steps</figcaption>
 	</div>
 	<div class="torights">
