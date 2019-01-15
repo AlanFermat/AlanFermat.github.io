@@ -118,7 +118,7 @@ When we reach the output layer in our neural network, we want to see how good ou
 <div class="side-by-side">
 	<div class="toleft">
 		<img class="image" src="https://github.com/AlanFermat/AlanFermat.github.io/blob/master/assets/images/nn5.jpg?raw=true" alt="Alt Text">
-		<figcaption class="caption">Mathematical formula for forward propagation</figcaption>
+		<figcaption class="caption">Mathematical formula for backward propagation</figcaption>
 	</div>
 	<div class="toright">
 		<p> We start from the output layer, comparing the desired results with predicted results then tracing back one layer at a time. </p>
@@ -170,7 +170,7 @@ There is a formal theorem supporting this! The <a href="https://en.wikipedia.org
 
 ## Can you show me an example?
 
-We will illustrate the application of a simple 3-layer aritifical neural network in approximating inverse function __f(x) = 1/x__.
+We will illustrate the application of a simple 3-layer aritificial neural network in approximating inverse function __f(x) = 1/x__.
 
 Source codes are uploaded <a href="https://github.com/AlanFermat/Blogs/tree/master/OneOverX">here</a>.
 

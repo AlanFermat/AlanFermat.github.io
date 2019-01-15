@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-08-10T22:33:12-05:00</updated><id>http://localhost:4000/</id><title type="html">Alan Yu</title><subtitle>A blog about technology and stuff related</subtitle><entry><title type="html">Twitter Higher and Lower game</title><link href="http://localhost:4000/twitter-game/" rel="alternate" type="text/html" title="Twitter Higher and Lower game" /><published>2018-04-01T00:00:00-05:00</published><updated>2018-04-01T00:00:00-05:00</updated><id>http://localhost:4000/twitter-game</id><content type="html" xml:base="http://localhost:4000/twitter-game/">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/AlanFermat/twitterhigherlower/master/ingame.png&quot; alt=&quot;Screenshot&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-12-05T20:08:39-06:00</updated><id>http://localhost:4000/</id><title type="html">Alan Yu</title><subtitle>A blog about technology and stuff related</subtitle><entry><title type="html">TensorFlow - yet another introduction</title><link href="http://localhost:4000/TensorFlow/" rel="alternate" type="text/html" title="TensorFlow - yet another introduction" /><published>2018-12-04T00:00:00-06:00</published><updated>2018-12-04T00:00:00-06:00</updated><id>http://localhost:4000/TensorFlow</id><content type="html" xml:base="http://localhost:4000/TensorFlow/">&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
+
+&lt;p&gt;After reading my blog about neural networks, some readers had questions on how to avoid implementing the neural network from the scratch. They found it very hard to do backpropagations by manually taking derivatives for each processing element at each layer in the neural network. The computation is time-consuming and could sometimes be totally messed up if you make a single mistake.&lt;/p&gt;
+
+&lt;p&gt;Therefore, today I wanna introduce this amazing neural network framework by Google to you. As many of you may have already heard of it, this open-source framework is called TensorFlow.&lt;/p&gt;</content><author><name>Alan Yu</name></author><category term="blog" /><category term="Machine Learning" /><category term="Neural Network" /><category term="Google" /><category term="Computation Framework" /><summary type="html">Background</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/nnTitle.jpg" /></entry><entry><title type="html">Twitter Higher and Lower game</title><link href="http://localhost:4000/twitter-game/" rel="alternate" type="text/html" title="Twitter Higher and Lower game" /><published>2018-04-01T00:00:00-05:00</published><updated>2018-04-01T00:00:00-05:00</updated><id>http://localhost:4000/twitter-game</id><content type="html" xml:base="http://localhost:4000/twitter-game/">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/AlanFermat/twitterhigherlower/master/ingame.png&quot; alt=&quot;Screenshot&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;twitter-lower-and-higher&quot;&gt;Twitter Lower and Higher&lt;/h2&gt;
 &lt;p&gt;This is a web game developed in 24 hours during Rice Hackathon that will allow users to guess which person has a higher Twitter followers.&lt;/p&gt;
@@ -12,11 +16,93 @@
 &lt;hr /&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/AlanFermat/twitterhigherlower&quot;&gt;Check it out&lt;/a&gt; here.
-If you need some help, just &lt;a href=&quot;https://github.com/AlanFermat/twitterhigherlower/issues&quot;&gt;tell me&lt;/a&gt;.&lt;/p&gt;</content><author><name>Alan Yu</name></author><category term="project" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://raw.githubusercontent.com/AlanFermat/twitterhigherlower/master/twitter.png" /></entry><entry><title type="html">Self-organized Map – unsupervised neural network</title><link href="http://localhost:4000/SOM/" rel="alternate" type="text/html" title="Self-organized Map -- unsupervised neural network" /><published>2018-03-21T22:44:00-05:00</published><updated>2018-03-21T22:44:00-05:00</updated><id>http://localhost:4000/SOM</id><content type="html" xml:base="http://localhost:4000/SOM/">&lt;h2 id=&quot;what-is-unsupervised-learning&quot;&gt;What is unsupervised learning?&lt;/h2&gt;
+If you need some help, just &lt;a href=&quot;https://github.com/AlanFermat/twitterhigherlower/issues&quot;&gt;tell me&lt;/a&gt;.&lt;/p&gt;</content><author><name>Alan Yu</name></author><category term="project" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://raw.githubusercontent.com/AlanFermat/twitterhigherlower/master/twitter.png" /></entry><entry><title type="html">Self-organizing Map – unsupervised neural network</title><link href="http://localhost:4000/SOM/" rel="alternate" type="text/html" title="Self-organizing Map -- unsupervised neural network" /><published>2018-03-21T22:44:00-05:00</published><updated>2018-03-21T22:44:00-05:00</updated><id>http://localhost:4000/SOM</id><content type="html" xml:base="http://localhost:4000/SOM/">&lt;h2 id=&quot;what-is-unsupervised-learning&quot;&gt;What is unsupervised learning?&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Unsupervised_learning&quot;&gt;Unsupervised machine learning&lt;/a&gt; is the machine learning task of inferring a function that describes the structure of “unlabeled” data. The goal for unsupervised learning is to detect some pattern behind a mass of data without any priori knowledge about the data. Sounds like roman policier? That’s right!&lt;/p&gt;
 
-&lt;p&gt;Since the beginning of this field, a lot of unsupervised learning algorithms has been developed and applied widely.&lt;/p&gt;</content><author><name>Alan Yu</name></author><category term="blog" /><category term="Machine Learning" /><category term="Neural Network" /><category term="Self-organized Map" /><category term="Unsupervised Learning" /><summary type="html">What is unsupervised learning?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/som1.jpg" /></entry><entry><title type="html">Shelper</title><link href="http://localhost:4000/Shelper/" rel="alternate" type="text/html" title="Shelper" /><published>2017-09-22T00:00:00-05:00</published><updated>2017-09-22T00:00:00-05:00</updated><id>http://localhost:4000/Shelper</id><content type="html" xml:base="http://localhost:4000/Shelper/">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/AlanFermat/Shelper/master/frontend/shelper.jpg&quot; alt=&quot;Screenshot&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Since the beginning of this field, a lot of unsupervised learning algorithms has been developed and applied widely. Algorithms like K-Means, hierarchical clustering, and principal component analysis are crucial tools in industry and academia.&lt;/p&gt;
+
+&lt;p&gt;Here is a useful &lt;a href=&quot;https://medium.com/machine-learning-for-humans/unsupervised-learning-f45587588294&quot;&gt;link&lt;/a&gt; that explains the concepts of unsupervised learning in more detail.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-self-organizing-map&quot;&gt;What is self-organizing map?&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Self-organizing_map&quot;&gt;Self-organizing map (SOM)
+&lt;/a&gt; is an amazing neural network. The number of published research papers related to self-organizing map ranked the first place from 2010 to 2015.&lt;/p&gt;
+
+&lt;p&gt;In this neural network, the output layer is a grid in which each neuron represents a value that tries to approximate the corresponding input value. The interesting part is that each neuron is actually a weight that needs to be tuned throughout the training process. The goal for this neuron network is to learn representation of all input data points on neurons of the output grid and then cluster the data via similarities between neurons.&lt;/p&gt;
+
+&lt;div class=&quot;side-by-side&quot;&gt;
+	&lt;div class=&quot;toleft&quot;&gt;
+		&lt;img class=&quot;image&quot; src=&quot;https://github.com/AlanFermat/AlanFermat.github.io/blob/master/assets/images/som2.jpg?raw=true&quot; alt=&quot;Alt Text&quot; /&gt;
+		&lt;figcaption class=&quot;caption&quot;&gt;Illustrion of SOM&lt;/figcaption&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;toright&quot;&gt;
+		&lt;p&gt;The major paramter is the number of neurons in the grid, called prototypes. The initialization of weights, learning rates and stopping criteria are the same as those of other neural networks.&lt;/p&gt; 
+		&lt;p&gt;As we can see from the left, each data point is mapped to a neuron that best approximates the value of that data point. Notice that the learning process is to adjust weights so that we minimize the &quot;distance&quot; between the input data point and the neuron that represents it. &lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;toleft&quot;&gt;
+		&lt;img class=&quot;image&quot; src=&quot;https://github.com/AlanFermat/AlanFermat.github.io/blob/master/assets/images/som3.jpg?raw=true&quot; alt=&quot;Alt Text&quot; /&gt;
+		&lt;figcaption class=&quot;caption&quot;&gt;Topological preserving&lt;/figcaption&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;toright&quot;&gt;
+		&lt;p&gt; The most magic part about self-organizing map is that it is topologically preserved meaning that the neighbors of the original data point *A* will be mapped to the neighbors of *A's* representation in the output grid.&lt;/p&gt;
+		&lt;p&gt; This property makes self-organizing map unique among all clustering algorithms. Since topological preservation can help the neural network recognize the patterns easily when the number of clusters are huge, self-organizing map is especially good at recognizing terrains.&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;toleft&quot;&gt;
+		&lt;img class=&quot;image&quot; src=&quot;https://github.com/AlanFermat/AlanFermat.github.io/blob/master/assets/images/som4.jpg?raw=true&quot; alt=&quot;Alt Text&quot; /&gt;
+		&lt;figcaption class=&quot;caption&quot;&gt;Mathematical formula&lt;/figcaption&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;toright&quot;&gt;
+		&lt;p&gt; Here comes the mathematical formula for SOM. As we can see, one round of training consists of two steps. The first one is competition in which we will choose a prototype closest to the given pattern based on the information we have. At the second step, we update our weight based on the a predefined distance of our prototype from the original pattern. &lt;/p&gt;
+		&lt;p&gt;Note that the *h* function that is used in the updating is analogous to gradient descent in artificial neural networks. However, normally we will use Manhattan distance here instead of Euclidean to preserve the topological structure. &lt;/p&gt;
+	&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;After the above explanation, I know some of you are still unclear about how it works or how the mathematical formula works, so do not hesitate to check out the following links:&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt; &lt;a href=&quot;http://www.pitt.edu/~is2470pb/Spring05/FinalProjects/Group1a/tutorial/som.html&quot;&gt;Lecture notes&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt; &lt;a href=&quot;https://www.youtube.com/watch?v=LjJeT7rwvF4&quot;&gt;Lecture video (unrelated to the above link)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;can-you-show-me-an-example&quot;&gt;Can you show me an example?&lt;/h2&gt;
+
+&lt;p&gt;First we generate four sets of 3-dimensional random Gaussian vectors with 1000 points in each set, each with a variance of &lt;strong&gt;0.1&lt;/strong&gt;. Then we center the data sets at &lt;strong&gt;(0,0,0), (0,7,0), (7,0,0), and (7,7,0)&lt;/strong&gt;, respectively.&lt;/p&gt;
+
+&lt;p&gt;We will train a SOM with 100 prototypes trying to cluster the data into 4 clusters.&lt;/p&gt;
+
+&lt;p&gt;Source codes are uploaded &lt;a href=&quot;afs&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;side-by-side&quot;&gt;
+	&lt;div class=&quot;toleft&quot;&gt;
+		&lt;img class=&quot;image&quot; src=&quot;https://github.com/AlanFermat/AlanFermat.github.io/blob/master/assets/images/som5.jpg?raw=true&quot; alt=&quot;Alt Text&quot; /&gt;
+		&lt;figcaption class=&quot;caption&quot;&gt;Neural network parameters&lt;/figcaption&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;toright&quot;&gt;
+		&lt;p&gt; We will use the parameters as suggested by the left to train and test the data. &lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;side-by-side&quot;&gt;
+	&lt;div class=&quot;toleft&quot;&gt;
+		&lt;img class=&quot;image&quot; src=&quot;https://github.com/AlanFermat/AlanFermat.github.io/blob/master/assets/images/som6.jpg?raw=true&quot; alt=&quot;Alt Text&quot; /&gt;
+		&lt;figcaption class=&quot;caption&quot;&gt;visualization of the grid after 250k training steps&lt;/figcaption&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;torights&quot;&gt;
+		&lt;p&gt; Note that in this graph, blue dots are generated points that are to be clustered. Red dots represent prototypes For illustration, we connect them by black solid lines. &lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;From the result, we can see that most prototypes are bundled and gathered to four corners. Because there are no cluster in the middle, the grid is stretched out tightly making sure maximum of prototypes can match the data points optimally.&lt;/p&gt;
+
+&lt;p&gt;Source code is &lt;a href=&quot;https://github.com/AlanFermat/Blogs/blob/master/SOM/SOM.m&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
+
+&lt;p&gt; http://www.cs.nott.ac.uk/~pszqiu/Teaching/2004/G5BNEC/G5BNEC-SOM.pdf &lt;/p&gt;
+&lt;p&gt;https://link.springer.com/referenceworkentry/10.1007%2F978-3-540-92910-9_19&lt;/p&gt;
+&lt;p&gt;https://www.sciencedirect.com/science/article/pii/S0925231298000307&lt;/p&gt;</content><author><name>Alan Yu</name></author><category term="blog" /><category term="Machine Learning" /><category term="Neural Network" /><category term="Self-organizing Map" /><category term="Unsupervised Learning" /><summary type="html">What is unsupervised learning?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/som1.jpg" /></entry><entry><title type="html">Shelper</title><link href="http://localhost:4000/Shelper/" rel="alternate" type="text/html" title="Shelper" /><published>2017-09-22T00:00:00-05:00</published><updated>2017-09-22T00:00:00-05:00</updated><id>http://localhost:4000/Shelper</id><content type="html" xml:base="http://localhost:4000/Shelper/">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/AlanFermat/Shelper/master/frontend/shelper.jpg&quot; alt=&quot;Screenshot&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;shelper&quot;&gt;Shelper&lt;/h2&gt;
 
@@ -70,7 +156,7 @@ If you need some help, just &lt;a href=&quot;https://github.com/AlanFermat/Shelp
 
 &lt;div class=&quot;side-by-side&quot;&gt;
 	&lt;div class=&quot;toleft&quot;&gt;
-		&lt;img class=&quot;image&quot; src=&quot;https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn1.jpg?token=AVJwLHHBZFQv6UECD-7Pd4Ip9VwGssqSks5bdb3YwA%3D%3D&quot; alt=&quot;Alt Text&quot; /&gt;
+		&lt;img class=&quot;image&quot; src=&quot;https://github.com/AlanFermat/AlanFermat.github.io/blob/master/assets/images/nn1.jpg?raw=true&quot; alt=&quot;Alt Text&quot; /&gt;
 		&lt;figcaption class=&quot;caption&quot;&gt;Illustration for one layer&lt;/figcaption&gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;toright&quot;&gt;
@@ -89,7 +175,7 @@ If you need some help, just &lt;a href=&quot;https://github.com/AlanFermat/Shelp
 
 &lt;div class=&quot;side-by-side&quot;&gt;
 	&lt;div class=&quot;toleft&quot;&gt;
-		&lt;img class=&quot;image&quot; src=&quot;https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn2.jpg?token=AVJwLGguShLYI_cgDH-xisVwleByhtfAks5bdb3swA%3D%3D&quot; alt=&quot;Alt Text&quot; /&gt;
+		&lt;img class=&quot;image&quot; src=&quot;https://github.com/AlanFermat/AlanFermat.github.io/blob/master/assets/images/nn2.jpg?raw=true&quot; alt=&quot;Alt Text&quot; /&gt;
 		&lt;figcaption class=&quot;caption&quot;&gt;what does weight look like&lt;/figcaption&gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;toright&quot;&gt;
@@ -100,7 +186,7 @@ If you need some help, just &lt;a href=&quot;https://github.com/AlanFermat/Shelp
 
 &lt;div class=&quot;side-by-side&quot;&gt;
 	&lt;div class=&quot;toleft&quot;&gt;
-		&lt;img class=&quot;image&quot; src=&quot;https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn3.jpg?token=AVJwLDtliDrjnV7A7zs7noag5ZFYJErHks5bdb39wA%3D%3D&quot; alt=&quot;Alt Text&quot; /&gt;
+		&lt;img class=&quot;image&quot; src=&quot;https://github.com/AlanFermat/AlanFermat.github.io/blob/master/assets/images/nn3.jpg?raw=true&quot; alt=&quot;Alt Text&quot; /&gt;
 		&lt;figcaption class=&quot;caption&quot;&gt;transfer function&lt;/figcaption&gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;toright&quot;&gt;
@@ -113,7 +199,7 @@ If you need some help, just &lt;a href=&quot;https://github.com/AlanFermat/Shelp
 
 &lt;div class=&quot;side-by-side&quot;&gt;
 	&lt;div class=&quot;toleft&quot;&gt;
-		&lt;img class=&quot;image&quot; src=&quot;https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn4.jpg?token=AVJwLPjNyGu_roaVx5FNAFYt0Yk8udkqks5bdb4JwA%3D%3D&quot; alt=&quot;Alt Text&quot; /&gt;
+		&lt;img class=&quot;image&quot; src=&quot;https://github.com/AlanFermat/AlanFermat.github.io/blob/master/assets/images/nn4.jpg?raw=true&quot; alt=&quot;Alt Text&quot; /&gt;
 		&lt;figcaption class=&quot;caption&quot;&gt;Mathematical formula for forward propagation&lt;/figcaption&gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;toright&quot;&gt;
@@ -131,8 +217,8 @@ If you need some help, just &lt;a href=&quot;https://github.com/AlanFermat/Shelp
 
 &lt;div class=&quot;side-by-side&quot;&gt;
 	&lt;div class=&quot;toleft&quot;&gt;
-		&lt;img class=&quot;image&quot; src=&quot;https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn5.jpg?token=AVJwLKIsW97pVNrSeFTJIVHVX3OGTIvrks5bdb4XwA%3D%3D&quot; alt=&quot;Alt Text&quot; /&gt;
-		&lt;figcaption class=&quot;caption&quot;&gt;Mathematical formula for forward propagation&lt;/figcaption&gt;
+		&lt;img class=&quot;image&quot; src=&quot;https://github.com/AlanFermat/AlanFermat.github.io/blob/master/assets/images/nn5.jpg?raw=true&quot; alt=&quot;Alt Text&quot; /&gt;
+		&lt;figcaption class=&quot;caption&quot;&gt;Mathematical formula for backward propagation&lt;/figcaption&gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;toright&quot;&gt;
 		&lt;p&gt; We start from the output layer, comparing the desired results with predicted results then tracing back one layer at a time. &lt;/p&gt;
@@ -180,15 +266,15 @@ If you need some help, just &lt;a href=&quot;https://github.com/AlanFermat/Shelp
 	&lt;li&gt;&lt;a href=&quot;http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.101.2647&amp;amp;rep=rep1&amp;amp;type=pdf&quot;&gt;Paper&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;what-is-an-example&quot;&gt;What is an example?&lt;/h2&gt;
+&lt;h2 id=&quot;can-you-show-me-an-example&quot;&gt;Can you show me an example?&lt;/h2&gt;
 
-&lt;p&gt;We will illustrate the application of a simple 3-layer aritifical neural network in approximating inverse function &lt;strong&gt;f(x) = 1/x&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;We will illustrate the application of a simple 3-layer aritificial neural network in approximating inverse function &lt;strong&gt;f(x) = 1/x&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;Source codes are uploaded &lt;a href=&quot;https://github.com/AlanFermat/Blogs/tree/master/OneOverX&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;div class=&quot;side-by-side&quot;&gt;
 	&lt;div class=&quot;toleft&quot;&gt;
-		&lt;img class=&quot;image&quot; src=&quot;https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn6.jpg?token=AVJwLHJIsRM96GtAuJpZ0vVE1cDVIFYsks5bdcP0wA%3D%3D&quot; alt=&quot;Alt Text&quot; /&gt;
+		&lt;img class=&quot;image&quot; src=&quot;https://github.com/AlanFermat/AlanFermat.github.io/blob/master/assets/images/nn6.jpg?raw=true&quot; alt=&quot;Alt Text&quot; /&gt;
 		&lt;figcaption class=&quot;caption&quot;&gt;Neural network parameters&lt;/figcaption&gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;toright&quot;&gt;
@@ -198,18 +284,18 @@ If you need some help, just &lt;a href=&quot;https://github.com/AlanFermat/Shelp
 
 &lt;div class=&quot;side-by-side&quot;&gt;
 	&lt;div class=&quot;toleft&quot;&gt;
-		&lt;img class=&quot;image&quot; src=&quot;https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn7.jpg?token=AVJwLBuzL9xSJPo5uRp9re3QcQoSZTOjks5bdcQCwA%3D%3D&quot; alt=&quot;Alt Text&quot; /&gt;
+		&lt;img class=&quot;image&quot; src=&quot;https://github.com/AlanFermat/AlanFermat.github.io/blob/master/assets/images/nn7.jpg?raw=true&quot; alt=&quot;Alt Text&quot; /&gt;
 		&lt;figcaption class=&quot;caption&quot;&gt;Error plot&lt;/figcaption&gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;toright&quot;&gt;
-		&lt;img class=&quot;image&quot; src=&quot;https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/nn8.jpg?token=AVJwLMu4W3cpd_kX4uJw-m8EA737kUNNks5bdcQOwA%3D%3D&quot; alt=&quot;Alt Text&quot; /&gt;
+		&lt;img class=&quot;image&quot; src=&quot;https://github.com/AlanFermat/AlanFermat.github.io/blob/master/assets/images/nn8.jpg?raw=true&quot; alt=&quot;Alt Text&quot; /&gt;
 		&lt;figcaption class=&quot;caption&quot;&gt;Predicted VS Desired&lt;/figcaption&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&quot;other-applications&quot;&gt;Other applications&lt;/h2&gt;
+&lt;h2 id=&quot;what-are-other-applications&quot;&gt;What are other applications?&lt;/h2&gt;
 
-&lt;p&gt;Use 3-layer neural network to teach a robotic arm how to draw certain pictures.&lt;/p&gt;
+&lt;p&gt;We also use a 3-layer neural network to teach a robotic arm how to draw certain pictures. The result is quite fun!&lt;/p&gt;
 
 &lt;p&gt;Check this out: 
 &lt;a href=&quot;https://github.com/AlanFermat/2R-robotic-arm-with-neural-network&quot;&gt; ANN application in Robotics &lt;/a&gt;&lt;/p&gt;
