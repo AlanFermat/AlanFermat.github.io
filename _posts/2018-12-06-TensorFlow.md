@@ -74,7 +74,10 @@ Just for fun you can use the above function to display a handwritten digit
 x_train, y_train, x_test, y_test = train_test_data(55000, 1000)
 display_digit(ran.randint(0, x_train.shape[0])) 
 ```
+You will get similar image as shown below
 
+
+<img src="https://github.com/AlanFermat/AlanFermat.github.io/blob/master/assets/images/digit.jpg?raw=true">
 
 
 Now we want to build our neural network. We know from the previous post that a neural network is basically a variation of matrix multiplication. 
