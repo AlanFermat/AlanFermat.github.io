@@ -199,8 +199,11 @@ with tf.Session() as sess:
 Now, it will save the middle process as "png" file in your working directory. Running this, you should get something similar to the following (still 1000 iterations as before),
 
 <div>
+    Start with:
     <img src="https://github.com/AlanFermat/AlanFermat.github.io/blob/master/assets/images/pic0.png?raw=true">
+    After 100 Iterations:
     <img src="https://github.com/AlanFermat/AlanFermat.github.io/blob/master/assets/images/pic100.png?raw=true">
+    After 500 Iterations:
     <img src="https://github.com/AlanFermat/AlanFermat.github.io/blob/master/assets/images/pic500.png?raw=true">
 </div>
 
