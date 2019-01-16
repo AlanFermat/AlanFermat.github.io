@@ -168,6 +168,45 @@ Training Step:1000  Accuracy =  0.8721  Loss = 0.5599681
 
 Note that we only run 1000 steps to get this decent result, you can try to run more steps to get much better result!
 
+In the end, we will visualize how we calssify the 11th training example as follows. Here, variable "i" is just for naming files while "num" is the order of the training example we are looking at.
+
+```
+def display_compare(num, i):
+    x_train = mnist.train.images[num,:].reshape(1,784)
+    y_train = mnist.train.labels[num,:]
+    label = y_train.argmax()
+    prediction = sess.run(y, feed_dict={x_: x_train}).argmax()
+    plt.title('Prediction: %d Label: %d' % (prediction, label))
+    plt.imshow(x_train.reshape([28,28]), cmap=plt.get_cmap('gray_r'))
+    plt.savefig("pic " + str(i) + ".png")
+```
+
+We will make a small tweak to the session
+
+```
+with tf.Session() as sess:
+    sess.run(tf.global_variables_initializer())
+    x_train, y_train, x_test, y_test = train_test_data(55000, 10000)
+    for i in range(train_step+1):
+        sess.run(trainingAlg, feed_dict={x_: x_train, y_: y_train})
+        if i%100 == 0:
+            display_compare(11, i)
+            print('Training Step:' + str(i) + '  Accuracy =  ' 
+                + str(sess.run(accuracy, feed_dict={x_: x_test, y_: y_test})) + '  Loss = ' + str(sess.run(loss, {x_: x_train, y_: y_train})))
+
+```
+
+Now, it will save the middle process as "png" file in your working directory. Running this, you should get something similar to the following (still 1000 iterations as before),
+
+<div>
+    <img src="https://github.com/AlanFermat/AlanFermat.github.io/blob/master/assets/images/pic0.png?raw=true">
+    <img src="https://github.com/AlanFermat/AlanFermat.github.io/blob/master/assets/images/pic100.png?raw=true">
+    <img src="https://github.com/AlanFermat/AlanFermat.github.io/blob/master/assets/images/pic500.png?raw=true">
+</div>
+
+It seems this model can learn perfectly for "3" at 11th position after merely 100 iterations. 
+
+
 
 Full code can be found <a href="https://github.com/AlanFermat/Blogs/blob/master/TensorFlow/MLP.py">here</a>
 
