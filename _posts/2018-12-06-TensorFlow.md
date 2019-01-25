@@ -1,7 +1,7 @@
 ---
 title: "TensorFlow - not another introduction I"
 layout: post
-date: 2018-12-04
+date: 2018-12-06
 image: /assets/images/tensorflow.jpg
 headerImage: true
 tag:
