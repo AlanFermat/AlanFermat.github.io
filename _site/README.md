@@ -1,1 +1,1 @@
-This is a personal website for Alan Yu
+This is a portfolio website for Alan Yu

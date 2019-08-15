@@ -1,8 +1,197 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-12-05T20:08:39-06:00</updated><id>http://localhost:4000/</id><title type="html">Alan Yu</title><subtitle>A blog about technology and stuff related</subtitle><entry><title type="html">TensorFlow - yet another introduction</title><link href="http://localhost:4000/TensorFlow/" rel="alternate" type="text/html" title="TensorFlow - yet another introduction" /><published>2018-12-04T00:00:00-06:00</published><updated>2018-12-04T00:00:00-06:00</updated><id>http://localhost:4000/TensorFlow</id><content type="html" xml:base="http://localhost:4000/TensorFlow/">&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-08-15T16:07:10-05:00</updated><id>http://localhost:4000/</id><title type="html">Alan Yu</title><subtitle>A blog about technology and stuff related</subtitle><entry><title type="html">TensorFlow - not another introduction II</title><link href="http://localhost:4000/LSTM/" rel="alternate" type="text/html" title="TensorFlow - not another introduction II" /><published>2019-01-18T00:00:00-06:00</published><updated>2019-01-18T00:00:00-06:00</updated><id>http://localhost:4000/LSTM</id><content type="html" xml:base="http://localhost:4000/LSTM/">&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
+
+&lt;p&gt;In this post we will introduce a more interesting, state-of-art neural network model to the readers: Long-short-term-memory Network.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Long-short-term-memory network&lt;/em&gt; or &lt;em&gt;LSTM network&lt;/em&gt; for short is a special case in Recurrent Neural Network that tries to avoid the “vanishing gradient problem.”&lt;/p&gt;
+
+&lt;p&gt;Lost in the jargons? Let’s take a step back and try to understand all the words in the above paragraph. &lt;a href=&quot;https://en.wikipedia.org/wiki/Recurrent_neural_network&quot;&gt;Recurrent Neural Network&lt;/a&gt; is a type of neural network that specializes in processing sequences of inputs via its storage of the internal states.&lt;/p&gt;
+
+&lt;p&gt;A typical Recurrent Neural Network looks like the following.&lt;/p&gt;</content><author><name>Alan Yu</name></author><category term="blog" /><category term="Machine Learning" /><category term="Neural Network" /><category term="Google" /><category term="Computation Framework" /><summary type="html">Background</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/tensorflow.jpg" /></entry><entry><title type="html">TensorFlow - not another introduction I</title><link href="http://localhost:4000/TensorFlow/" rel="alternate" type="text/html" title="TensorFlow - not another introduction I" /><published>2018-12-06T00:00:00-06:00</published><updated>2018-12-06T00:00:00-06:00</updated><id>http://localhost:4000/TensorFlow</id><content type="html" xml:base="http://localhost:4000/TensorFlow/">&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
 
 &lt;p&gt;After reading my blog about neural networks, some readers had questions on how to avoid implementing the neural network from the scratch. They found it very hard to do backpropagations by manually taking derivatives for each processing element at each layer in the neural network. The computation is time-consuming and could sometimes be totally messed up if you make a single mistake.&lt;/p&gt;
 
-&lt;p&gt;Therefore, today I wanna introduce this amazing neural network framework by Google to you. As many of you may have already heard of it, this open-source framework is called TensorFlow.&lt;/p&gt;</content><author><name>Alan Yu</name></author><category term="blog" /><category term="Machine Learning" /><category term="Neural Network" /><category term="Google" /><category term="Computation Framework" /><summary type="html">Background</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/nnTitle.jpg" /></entry><entry><title type="html">Twitter Higher and Lower game</title><link href="http://localhost:4000/twitter-game/" rel="alternate" type="text/html" title="Twitter Higher and Lower game" /><published>2018-04-01T00:00:00-05:00</published><updated>2018-04-01T00:00:00-05:00</updated><id>http://localhost:4000/twitter-game</id><content type="html" xml:base="http://localhost:4000/twitter-game/">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/AlanFermat/twitterhigherlower/master/ingame.png&quot; alt=&quot;Screenshot&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Therefore, today I wanna introduce this amazing neural network framework by Google to you: TensorFlow. It’s a relatively high-level framework facilitating neural network implementations.&lt;/p&gt;
+
+&lt;p&gt;Tensorflow helps define a computation graph where neoral networks are structured and engineered in a particular way. People can tune parameters and visualize the computation graph so that the lower-level computation part of neural network is hidden (like taking nasty derivative in backpropagation).&lt;/p&gt;
+
+&lt;p&gt;In the following blog, we will be introducing you tensorflow by two simple examples.&lt;/p&gt;
+
+&lt;p&gt;Note that in this blog, I will walk you through the basics of tensorflow mainly by 
+these two examples (instead of throw out all the syntax and formulas).&lt;/p&gt;
+
+&lt;h2 id=&quot;mlp-multi-layer-perceptron&quot;&gt;MLP (Multi-Layer Perceptron)&lt;/h2&gt;
+
+&lt;p&gt;This is a illustration of how you would use tensorflow using MNIST data set (a data set that calssifies hand-written digits). The data has 784 dimensions (784 columns). The amount (number of rows) of training data and testing data is upon our choice. Because it’s a digit recognition data, we have 10 classes in total.&lt;/p&gt;
+
+&lt;p&gt;We first import the data and the packages that are needed.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import tensorflow as tf
+from tensorflow.examples.tutorials.mnist import input_data
+mnist = input_data.read_data_sets('MNIST_data', one_hot=True)
+import matplotlib.pyplot as plt
+import numpy as np
+import random as ran
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now we separate the data into train and test sets and wrap the procedure up in one function&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;def train_test_data(train_num, test_num):
+	x_train = mnist.train.images[:train_num,:]
+	y_train = mnist.train.labels[:train_num,:]
+	x_test = mnist.test.images[:test_num,:]
+	y_test = mnist.test.labels[:test_num,:]
+	return x_train, y_train, x_test, y_test
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;For visualization, we will use the following function to see what a “digit” looks like&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;def display_digit(num):
+    print(y_train[num])
+    label = y_train[num].argmax(axis=0)
+    image = x_train[num].reshape([28,28])
+    plt.title('Example: %d  Label: %d' % (num, label))
+    plt.imshow(image, cmap=plt.get_cmap('gray_r'))
+    plt.show()
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Just for fun you can use the above function to display a handwritten digit&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;x_train, y_train, x_test, y_test = train_test_data(55000, 1000)
+display_digit(ran.randint(0, x_train.shape[0])) 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;You will get similar image as shown below&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/AlanFermat/AlanFermat.github.io/blob/master/assets/images/digit.png?raw=true&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now we want to build our neural network. We know from the previous post that a neural network is basically a variation of matrix multiplication.&lt;/p&gt;
+
+&lt;p&gt;By convention, tensorflow will require people to have place holders for the data. Therefore, we will have our place holder for x (input data) and y (labels) as below.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dimension = 784
+numClass = 10
+x_ = tf.placeholder(tf.float32, shape=[None, dimension])
+y_ = tf.placeholder(tf.float32, shape=[None, numClass])
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;One interesting about tensorflow is that we will define the work flow of neural network before running anything.&lt;/p&gt;
+
+&lt;p&gt;Here, we want to construct a neural network composed of one hidden layer with 28 hidden units.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;hiddenUnits = 28
+W = tf.Variable(np.random.normal(0, 0.05, (dimension, hiddenUnits)), dtype=tf.float32)
+b = tf.Variable(np.zeros((1, hiddenUnits)), dtype=tf.float32)
+W2 = tf.Variable(np.random.normal (0, 0.05, (hiddenUnits, numClass)),dtype=tf.float32)
+b2 = tf.Variable(np.zeros((1, numClass)), dtype=tf.float32)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;With selection of proper transfer function, we can have our neural net work as follows, (we use softmax function in the end to smoothly classify digits)&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;output0 = tf.tanh(tf.matmul(x_, W) + b) 
+output1 = tf.matmul(output0, W2) + b2
+y = tf.nn.softmax(output1)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now we will define our loss function as follows&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;loss = tf.reduce_mean(-tf.reduce_sum(y_ * tf.log(y), reduction_indices=[1]))
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This function is taking the log of all our predictions y (whose values range from 0 to 1) and element wise multiplying by the example’s true value y_. If the log function for each value is close to zero, it will make the value a large negative number (i.e., &lt;em&gt;-np.log(0.01) = 4.6&lt;/em&gt;), and if it is close to 1, it will make the value a small negative number (i.e., &lt;em&gt;-np.log(0.99) = 0.1&lt;/em&gt;).&lt;/p&gt;
+
+&lt;p&gt;Then we will define our learning rate (this will be explored heuristically and empirically).
+Finally, we will define our algorithm by optimizing (minimizing) loss function&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;trainingAlg = tf.train.GradientDescentOptimizer(0.02).minimize(loss)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;We also want to compute the accuracy afterwards,&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;correct_prediction = tf.equal(tf.argmax(y,1), tf.argmax(y_,1))
+accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;After telling our neural network how to train the data and optimize the weights, we can run the computation graph by starting a tensorflow session. In the session, we shall first initialize all the variables (it’s like declaring them as nodes in the computation graph). Then we iteratively train the model with fixed training steps.&lt;/p&gt;
+
+&lt;p&gt;Note that when we run the session, we have to map the dummy variable in the original computation graph to the actual data that we are interested in. For example, here x_ is a dummy variable, and we are actually training on data x_train so we will build a feed_dict for such substitution.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;train_step = 1000
+with tf.session() as sess:
+	sess.run(tf.global_variables_initializer())
+	x_train, y_train, x_test, y_test = train_test_data(55000, 10000)
+	for i in range(train_step+1):
+    	sess.run(trainingAlg, feed_dict={x_: x_train, y_: y_train})
+    	if i%100 == 0:
+        	print('Training Step:' + str(i) + '  Accuracy =  ' + str(sess.run(accuracy, feed_dict={x_: x_test, y_: y_test})) + '  Loss = ' + str(sess.run(loss, {x_: x_train, y_: y_train})))
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Just running the above example gives the output as follows:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Training Step:0  Accuracy =  0.0608  Loss = 2.319519
+Training Step:100  Accuracy =  0.5714  Loss = 2.0317836
+Training Step:200  Accuracy =  0.6556  Loss = 1.6440488
+Training Step:300  Accuracy =  0.7084  Loss = 1.3017232
+Training Step:400  Accuracy =  0.769  Loss = 1.0667019
+Training Step:500  Accuracy =  0.8082  Loss = 0.90720826
+Training Step:600  Accuracy =  0.8315  Loss = 0.7943547
+Training Step:700  Accuracy =  0.8444  Loss = 0.7113519
+Training Step:800  Accuracy =  0.8555  Loss = 0.6483375
+Training Step:900  Accuracy =  0.8645  Loss = 0.59918994
+Training Step:1000  Accuracy =  0.8721  Loss = 0.5599681
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Note that we only run 1000 steps to get this decent result, you can try to run more steps to get much better result!&lt;/p&gt;
+
+&lt;p&gt;In the end, we will visualize how we calssify the 11th training example as follows. Here, variable “i” is just for naming files while “num” is the order of the training example we are looking at.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;def display_compare(num, i):
+    x_train = mnist.train.images[num,:].reshape(1,784)
+    y_train = mnist.train.labels[num,:]
+    label = y_train.argmax()
+    prediction = sess.run(y, feed_dict={x_: x_train}).argmax()
+    plt.title('Prediction: %d Label: %d' % (prediction, label))
+    plt.imshow(x_train.reshape([28,28]), cmap=plt.get_cmap('gray_r'))
+    plt.savefig(&quot;pic &quot; + str(i) + &quot;.png&quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;We will make a small tweak to the session&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;with tf.Session() as sess:
+    sess.run(tf.global_variables_initializer())
+    x_train, y_train, x_test, y_test = train_test_data(55000, 10000)
+    for i in range(train_step+1):
+        sess.run(trainingAlg, feed_dict={x_: x_train, y_: y_train})
+        if i%100 == 0:
+            display_compare(11, i)
+            print('Training Step:' + str(i) + '  Accuracy =  ' 
+                + str(sess.run(accuracy, feed_dict={x_: x_test, y_: y_test})) + '  Loss = ' + str(sess.run(loss, {x_: x_train, y_: y_train})))
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now, it will save the middle process as “png” file in your working directory. Running this, you should get something similar to the following (still 1000 iterations as before),&lt;/p&gt;
+
+&lt;div&gt;
+    Start with:
+    &lt;img src=&quot;https://github.com/AlanFermat/AlanFermat.github.io/blob/master/assets/images/pic0.png?raw=true&quot; /&gt;
+    After 100 Iterations:
+    &lt;img src=&quot;https://github.com/AlanFermat/AlanFermat.github.io/blob/master/assets/images/pic100.png?raw=true&quot; /&gt;
+    After 500 Iterations:
+    &lt;img src=&quot;https://github.com/AlanFermat/AlanFermat.github.io/blob/master/assets/images/pic500.png?raw=true&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;It seems this model can learn perfectly for “3” at 11th position after merely 100 iterations.&lt;/p&gt;
+
+&lt;p&gt;Full code can be found &lt;a href=&quot;https://github.com/AlanFermat/Blogs/blob/master/TensorFlow/MLP.py&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;lstm-long-short-term-memory&quot;&gt;LSTM (Long-short term memory)&lt;/h2&gt;
+
+&lt;p&gt;See my next post!&lt;/p&gt;
+
+&lt;h2 id=&quot;a-few-notes&quot;&gt;A Few Notes&lt;/h2&gt;
+
+&lt;p&gt;There is an amazing online course by Stanford that will familiarize you with tensorflow. The course is CS20.&lt;/p&gt;
+
+&lt;p&gt;You can check out the link &lt;a href=&quot;https://web.stanford.edu/class/cs20si/syllabus.html&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content><author><name>Alan Yu</name></author><category term="blog" /><category term="Machine Learning" /><category term="Neural Network" /><category term="Google" /><category term="Computation Framework" /><summary type="html">Background</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/tensorflow.jpg" /></entry><entry><title type="html">Twitter Higher and Lower game</title><link href="http://localhost:4000/twitter-game/" rel="alternate" type="text/html" title="Twitter Higher and Lower game" /><published>2018-04-01T00:00:00-05:00</published><updated>2018-04-01T00:00:00-05:00</updated><id>http://localhost:4000/twitter-game</id><content type="html" xml:base="http://localhost:4000/twitter-game/">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/AlanFermat/twitterhigherlower/master/ingame.png&quot; alt=&quot;Screenshot&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;twitter-lower-and-higher&quot;&gt;Twitter Lower and Higher&lt;/h2&gt;
 &lt;p&gt;This is a web game developed in 24 hours during Rice Hackathon that will allow users to guess which person has a higher Twitter followers.&lt;/p&gt;
