@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-08-15T17:00:09-05:00</updated><id>http://localhost:4000/</id><title type="html">Alan Yu</title><subtitle>A blog about technology and stuff related</subtitle><entry><title type="html">TensorFlow - not another introduction II</title><link href="http://localhost:4000/LSTM/" rel="alternate" type="text/html" title="TensorFlow - not another introduction II" /><published>2019-01-18T00:00:00-06:00</published><updated>2019-01-18T00:00:00-06:00</updated><id>http://localhost:4000/LSTM</id><content type="html" xml:base="http://localhost:4000/LSTM/">&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-08-15T17:21:11-05:00</updated><id>http://localhost:4000/</id><title type="html">Alan Yu</title><subtitle>A blog about technology and stuff related</subtitle><entry><title type="html">TensorFlow - not another introduction II</title><link href="http://localhost:4000/LSTM/" rel="alternate" type="text/html" title="TensorFlow - not another introduction II" /><published>2019-01-18T00:00:00-06:00</published><updated>2019-01-18T00:00:00-06:00</updated><id>http://localhost:4000/LSTM</id><content type="html" xml:base="http://localhost:4000/LSTM/">&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
 
 &lt;p&gt;In this post we will introduce a more interesting, state-of-art neural network model to the readers: Long-short-term-memory Network.&lt;/p&gt;
 
@@ -43,6 +43,7 @@
 
 &lt;h2 id=&quot;lstm&quot;&gt;LSTM&lt;/h2&gt;
 
+&lt;h3 id=&quot;lstm-module&quot;&gt;LSTM Module&lt;/h3&gt;
 &lt;p&gt;Walla! Here comes the savior – LSTM network. In LSTM net, we don’t push the long term memory through the activation function, i.e. we don’t backprop the long term memory of an error all the way to the input layer. Thus, we don’t have a vanishing gradient problem!&lt;/p&gt;
 
 &lt;p&gt;Let’s look at the LSTM “modules” as below.&lt;/p&gt;
@@ -59,6 +60,8 @@
 &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/lstm4.png&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Note that each module accepts input at a particular time tick as well as state(“long term memory”) and last output(“short term memory”). Then the module will use all of them to output a view of its current state.&lt;/p&gt;
+
+&lt;h3 id=&quot;a-single-lstm-unit&quot;&gt;A Single LSTM Unit&lt;/h3&gt;
 
 &lt;p&gt;A single LSTM unit looks like this,&lt;/p&gt;
 
@@ -77,24 +80,79 @@
 	&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Then we run an “input gate”,&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Input plus last output passes through two NNs
-    &lt;ol&gt;
-      &lt;li&gt;One with a &lt;em&gt;tanh&lt;/em&gt; layer at the top producing a value from -1 to 1&lt;/li&gt;
-      &lt;li&gt;One with logistic layer at the top producing a value from 0 to 1&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Item-by-item multiplication will produce a vector for the current state
-    &lt;ol&gt;
-      &lt;li&gt;The update is added to the long-term memory&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
+&lt;div class=&quot;side-by-side&quot;&gt;
+	&lt;div class=&quot;toleft&quot;&gt;
+		&lt;img src=&quot;https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/lstm8.png&quot; /&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;toright&quot;&gt;
+		&lt;p&gt;Then we run an &quot;input gate&quot;,&lt;/p&gt;
+		&lt;ol&gt;
+			&lt;li&gt;Input plus last output passes through two NNs
+				&lt;ol&gt;
+				&lt;li&gt;One with a tanh layer at the top producing a value from -1 to 1&lt;/li&gt;
+				&lt;li&gt;One with logistic layer at the top producing a value from 0 to 1&lt;/li&gt;
+				&lt;/ol&gt;
+			&lt;/li&gt;
+			&lt;li&gt;Item-by-item multiplication will produce a vector for the current state
+				&lt;ol&gt;
+					&lt;li&gt;The update is added to the long-term memory&lt;/li&gt;
+				&lt;/ol&gt;
+			&lt;/li&gt;
+		&lt;/ol&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
 
-&lt;p&gt;In the end, we run “output gate”,&lt;/p&gt;
+&lt;div class=&quot;side-by-side&quot;&gt;
+	&lt;div class=&quot;toleft&quot;&gt;
+		&lt;img src=&quot;https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/lstm9.png&quot; /&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;toright&quot;&gt;
+		&lt;p&gt;In the end, we run &quot;output gate&quot;,&lt;/p&gt;
+		&lt;ol&gt;
+			&lt;li&gt;Push state through a tanh layer at the top producing a value from -1 to 1&lt;/li&gt;
+		&lt;/ol&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;code-snippets&quot;&gt;Code Snippets&lt;/h2&gt;
+
+&lt;p&gt;With the help of tensorflow framework, creating a LSTM unit is quite straightforward.&lt;/p&gt;
+
+&lt;p&gt;Let’s take a brief walk-through.&lt;/p&gt;
+
+&lt;p&gt;Set up a 1000-unit LSTM network.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;hiddenUniots = 1000
+lstm = tf.nn.rnn_cell.LSTMCell(hiddenUnits)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Set up the initial state&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;initialState = lstm.zero_state(batchSize, tf.float32)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Train the LSTM net&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;currentState = initialState
+for iter in range(maxSeqLen):
+    timeTick = input[iter]
+    # concatenate the state with the input, 
+    # then compute the next state
+    (lstm_output, currentState) = lstm(timeTick, currentState)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;where &lt;em&gt;input&lt;/em&gt; is your stacked input variables.&lt;/p&gt;
+
+&lt;p&gt;Note that &lt;em&gt;lstm_output&lt;/em&gt; is your final output, you can do a feedforward or softmax afterwards to regularize it.&lt;/p&gt;
+
+&lt;p&gt;And…, that’s it.&lt;/p&gt;
+
+&lt;p&gt;Within five lines you could set up a LSTM module and you can choose optimizer to train the model(how to do that? check out the &lt;a href=&quot;https://imalanyu.com/TensorFlow/&quot;&gt;TensorFlow Tutorial Post&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h2 id=&quot;more-about-lstm&quot;&gt;More About LSTM&lt;/h2&gt;
+
+&lt;p&gt;If you wanna know more about LSTM, check out the following&lt;/p&gt;
 &lt;ol&gt;
-  &lt;li&gt;Push state through a &lt;em&gt;tanh&lt;/em&gt; layer at the top producing a value from -1 to 1&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;https://arxiv.org/pdf/1503.04069.pdf&quot;&gt;Original Paper&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=WCUNPb-5EYI&quot;&gt;Video Tutorial&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;</content><author><name>Alan Yu</name></author><category term="blog" /><category term="Machine Learning" /><category term="Neural Network" /><category term="Google" /><category term="Computation Framework" /><summary type="html">Background</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/tensorflow.jpg" /></entry><entry><title type="html">TensorFlow - not another introduction I</title><link href="http://localhost:4000/TensorFlow/" rel="alternate" type="text/html" title="TensorFlow - not another introduction I" /><published>2018-12-06T00:00:00-06:00</published><updated>2018-12-06T00:00:00-06:00</updated><id>http://localhost:4000/TensorFlow</id><content type="html" xml:base="http://localhost:4000/TensorFlow/">&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
 
 &lt;p&gt;After reading my blog about neural networks, some readers had questions on how to avoid implementing the neural network from the scratch. They found it very hard to do backpropagations by manually taking derivatives for each processing element at each layer in the neural network. The computation is time-consuming and could sometimes be totally messed up if you make a single mistake.&lt;/p&gt;
