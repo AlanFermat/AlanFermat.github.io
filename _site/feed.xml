@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-08-15T16:18:21-05:00</updated><id>http://localhost:4000/</id><title type="html">Alan Yu</title><subtitle>A blog about technology and stuff related</subtitle><entry><title type="html">TensorFlow - not another introduction II</title><link href="http://localhost:4000/LSTM/" rel="alternate" type="text/html" title="TensorFlow - not another introduction II" /><published>2019-01-18T00:00:00-06:00</published><updated>2019-01-18T00:00:00-06:00</updated><id>http://localhost:4000/LSTM</id><content type="html" xml:base="http://localhost:4000/LSTM/">&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-08-15T16:24:23-05:00</updated><id>http://localhost:4000/</id><title type="html">Alan Yu</title><subtitle>A blog about technology and stuff related</subtitle><entry><title type="html">TensorFlow - not another introduction II</title><link href="http://localhost:4000/LSTM/" rel="alternate" type="text/html" title="TensorFlow - not another introduction II" /><published>2019-01-18T00:00:00-06:00</published><updated>2019-01-18T00:00:00-06:00</updated><id>http://localhost:4000/LSTM</id><content type="html" xml:base="http://localhost:4000/LSTM/">&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
 
 &lt;p&gt;In this post we will introduce a more interesting, state-of-art neural network model to the readers: Long-short-term-memory Network.&lt;/p&gt;
 
@@ -12,9 +12,21 @@
 
 &lt;h2 id=&quot;vanishing-gradients-problem&quot;&gt;Vanishing Gradients Problem&lt;/h2&gt;
 
-&lt;p&gt;If we unroll the network above, we will see something like this,&lt;/p&gt;
+&lt;p&gt;If we unroll the network above, we will see something like this,
+&lt;img src=&quot;https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/lstm6.png&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Note that the derivative of loss with respect to activation function is often less than 1. If we have a deep RNN and apply that multiplier constantly as we backprop the errors to the input layer, the derived gradient is approaching zero.&lt;/p&gt;
+&lt;p&gt;Recall how we calculate the derivative in the backpropagation from an &lt;a href=&quot;https://imalanyu.com/Neural-Network/&quot;&gt;early post&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;side-by-side&quot;&gt;
+	&lt;div class=&quot;toleft&quot;&gt;
+		&lt;img class=&quot;image&quot; src=&quot;https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/lstm2.png&quot; alt=&quot;Alt Text&quot; /&gt;
+		&lt;figcaption class=&quot;caption&quot;&gt;Illustration for calculating derivatives in backprop&lt;/figcaption&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;toright&quot;&gt;
+		&lt;p&gt;Note that the derivative of loss with respect to activation function is often less than 1.&lt;/p&gt;
+		&lt;p&gt;If we have a deep RNN and apply that multiplier constantly as we backprop the errors to the input layer, the derived gradient is approaching zero. &lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Walla! Here comes the savior – LSTM network. In LSTM net, we don’t push the long term memory through the activation function, i.e. we don’t backprop the long term memory of an error all the way to the input layer. Thus, we don’t have a vanishing gradients problem!&lt;/p&gt;</content><author><name>Alan Yu</name></author><category term="blog" /><category term="Machine Learning" /><category term="Neural Network" /><category term="Google" /><category term="Computation Framework" /><summary type="html">Background</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/tensorflow.jpg" /></entry><entry><title type="html">TensorFlow - not another introduction I</title><link href="http://localhost:4000/TensorFlow/" rel="alternate" type="text/html" title="TensorFlow - not another introduction I" /><published>2018-12-06T00:00:00-06:00</published><updated>2018-12-06T00:00:00-06:00</updated><id>http://localhost:4000/TensorFlow</id><content type="html" xml:base="http://localhost:4000/TensorFlow/">&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
 
