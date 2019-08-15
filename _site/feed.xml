@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-08-15T16:24:23-05:00</updated><id>http://localhost:4000/</id><title type="html">Alan Yu</title><subtitle>A blog about technology and stuff related</subtitle><entry><title type="html">TensorFlow - not another introduction II</title><link href="http://localhost:4000/LSTM/" rel="alternate" type="text/html" title="TensorFlow - not another introduction II" /><published>2019-01-18T00:00:00-06:00</published><updated>2019-01-18T00:00:00-06:00</updated><id>http://localhost:4000/LSTM</id><content type="html" xml:base="http://localhost:4000/LSTM/">&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-08-15T17:00:09-05:00</updated><id>http://localhost:4000/</id><title type="html">Alan Yu</title><subtitle>A blog about technology and stuff related</subtitle><entry><title type="html">TensorFlow - not another introduction II</title><link href="http://localhost:4000/LSTM/" rel="alternate" type="text/html" title="TensorFlow - not another introduction II" /><published>2019-01-18T00:00:00-06:00</published><updated>2019-01-18T00:00:00-06:00</updated><id>http://localhost:4000/LSTM</id><content type="html" xml:base="http://localhost:4000/LSTM/">&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
 
 &lt;p&gt;In this post we will introduce a more interesting, state-of-art neural network model to the readers: Long-short-term-memory Network.&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;Long-short-term-memory network&lt;/em&gt; or &lt;em&gt;LSTM network&lt;/em&gt; for short is a special case in Recurrent Neural Network that tries to avoid the “vanishing gradients problem.”&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Long-short-term-memory network&lt;/em&gt; or &lt;em&gt;LSTM network&lt;/em&gt; for short is a special case in Recurrent Neural Network that tries to avoid the “vanishing gradient problem.”&lt;/p&gt;
 
 &lt;p&gt;Lost in the jargons? Let’s take a step back and try to understand all the words in the above paragraph. &lt;a href=&quot;https://en.wikipedia.org/wiki/Recurrent_neural_network&quot;&gt;Recurrent Neural Network&lt;/a&gt; is a type of neural network that specializes in processing sequences of inputs via its storage of the internal states.&lt;/p&gt;
 
@@ -10,7 +10,7 @@
 
 &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/lstm1.png&quot; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;vanishing-gradients-problem&quot;&gt;Vanishing Gradients Problem&lt;/h2&gt;
+&lt;h2 id=&quot;vanishing-gradient-problem&quot;&gt;Vanishing Gradient Problem&lt;/h2&gt;
 
 &lt;p&gt;If we unroll the network above, we will see something like this,
 &lt;img src=&quot;https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/lstm6.png&quot; /&gt;&lt;/p&gt;
@@ -19,16 +19,83 @@
 
 &lt;div class=&quot;side-by-side&quot;&gt;
 	&lt;div class=&quot;toleft&quot;&gt;
-		&lt;img class=&quot;image&quot; src=&quot;https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/lstm2.png&quot; alt=&quot;Alt Text&quot; /&gt;
-		&lt;figcaption class=&quot;caption&quot;&gt;Illustration for calculating derivatives in backprop&lt;/figcaption&gt;
+		&lt;div style=&quot;margin-bottom: 100pt&quot;&gt;
+			&lt;img class=&quot;image&quot; src=&quot;https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/lstm3.png&quot; alt=&quot;Alt Text&quot; /&gt;
+			&lt;figcaption class=&quot;caption&quot;&gt;Derivative of logistic activation function&lt;/figcaption&gt;
+		&lt;/div&gt;
+		&lt;div padding-bottom=&quot;10&quot;&gt;
+			&lt;img class=&quot;image&quot; src=&quot;https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/lstm2.png&quot; alt=&quot;Alt Text&quot; /&gt;
+			&lt;figcaption class=&quot;caption&quot;&gt;Illustration for calculating derivatives in backprop&lt;/figcaption&gt;
+		&lt;/div&gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;toright&quot;&gt;
 		&lt;p&gt;Note that the derivative of loss with respect to activation function is often less than 1.&lt;/p&gt;
+		&lt;p&gt;Think about the derivatice with respect to the logistic function on the left for example, we know that maximum value is reached when the activation function takes the value of 0.5 which is less than 1.&lt;/p&gt;
 		&lt;p&gt;If we have a deep RNN and apply that multiplier constantly as we backprop the errors to the input layer, the derived gradient is approaching zero. &lt;/p&gt;
+		&lt;p&gt;The error from the output layer may not be able to influence the upfront layers as they are too far.&lt;/p&gt;
+		&lt;p&gt;This pattern would make the training stagnant as no correction would be made in the upfront layers due to the errors in the output.&lt;/p&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Walla! Here comes the savior – LSTM network. In LSTM net, we don’t push the long term memory through the activation function, i.e. we don’t backprop the long term memory of an error all the way to the input layer. Thus, we don’t have a vanishing gradients problem!&lt;/p&gt;</content><author><name>Alan Yu</name></author><category term="blog" /><category term="Machine Learning" /><category term="Neural Network" /><category term="Google" /><category term="Computation Framework" /><summary type="html">Background</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/tensorflow.jpg" /></entry><entry><title type="html">TensorFlow - not another introduction I</title><link href="http://localhost:4000/TensorFlow/" rel="alternate" type="text/html" title="TensorFlow - not another introduction I" /><published>2018-12-06T00:00:00-06:00</published><updated>2018-12-06T00:00:00-06:00</updated><id>http://localhost:4000/TensorFlow</id><content type="html" xml:base="http://localhost:4000/TensorFlow/">&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
+&lt;p&gt;You can see more detailed explanations on the vanishing gradient problem below.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/qO_NLVjD6zE&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&quot;lstm&quot;&gt;LSTM&lt;/h2&gt;
+
+&lt;p&gt;Walla! Here comes the savior – LSTM network. In LSTM net, we don’t push the long term memory through the activation function, i.e. we don’t backprop the long term memory of an error all the way to the input layer. Thus, we don’t have a vanishing gradient problem!&lt;/p&gt;
+
+&lt;p&gt;Let’s look at the LSTM “modules” as below.&lt;/p&gt;
+
+&lt;p&gt;In the module,&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Vector travels along the lines&lt;/li&gt;
+  &lt;li&gt;A circle/oval represents application of a function to each dimension in a vector&lt;/li&gt;
+  &lt;li&gt;A rectangle represents a neural network&lt;/li&gt;
+  &lt;li&gt;𝞂 stands for a logistic activation layer at the top&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;tanh&lt;/em&gt; means a hyperbolic tangent activation layer at the top&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/lstm4.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Note that each module accepts input at a particular time tick as well as state(“long term memory”) and last output(“short term memory”). Then the module will use all of them to output a view of its current state.&lt;/p&gt;
+
+&lt;p&gt;A single LSTM unit looks like this,&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/lstm5.png&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;side-by-side&quot;&gt;
+	&lt;div class=&quot;toleft&quot;&gt;
+		&lt;img src=&quot;https://raw.githubusercontent.com/AlanFermat/AlanFermat.github.io/master/assets/images/lstm7.png&quot; /&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;toright&quot;&gt;
+		&lt;p&gt;First we will run teh &quot;forget gate&quot;,&lt;/p&gt;
+		&lt;ol&gt;
+			&lt;li&gt;Last output and new input pass through a neural net with logistic layer at the top&lt;/li&gt;
+			&lt;li&gt;it will produce all values from 0 to 1&lt;/li&gt;
+		&lt;/ol&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Then we run an “input gate”,&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Input plus last output passes through two NNs
+    &lt;ol&gt;
+      &lt;li&gt;One with a &lt;em&gt;tanh&lt;/em&gt; layer at the top producing a value from -1 to 1&lt;/li&gt;
+      &lt;li&gt;One with logistic layer at the top producing a value from 0 to 1&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Item-by-item multiplication will produce a vector for the current state
+    &lt;ol&gt;
+      &lt;li&gt;The update is added to the long-term memory&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;In the end, we run “output gate”,&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Push state through a &lt;em&gt;tanh&lt;/em&gt; layer at the top producing a value from -1 to 1&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>Alan Yu</name></author><category term="blog" /><category term="Machine Learning" /><category term="Neural Network" /><category term="Google" /><category term="Computation Framework" /><summary type="html">Background</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/tensorflow.jpg" /></entry><entry><title type="html">TensorFlow - not another introduction I</title><link href="http://localhost:4000/TensorFlow/" rel="alternate" type="text/html" title="TensorFlow - not another introduction I" /><published>2018-12-06T00:00:00-06:00</published><updated>2018-12-06T00:00:00-06:00</updated><id>http://localhost:4000/TensorFlow</id><content type="html" xml:base="http://localhost:4000/TensorFlow/">&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
 
 &lt;p&gt;After reading my blog about neural networks, some readers had questions on how to avoid implementing the neural network from the scratch. They found it very hard to do backpropagations by manually taking derivatives for each processing element at each layer in the neural network. The computation is time-consuming and could sometimes be totally messed up if you make a single mistake.&lt;/p&gt;
 
