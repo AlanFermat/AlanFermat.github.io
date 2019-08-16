@@ -42,7 +42,7 @@ I also built the new Mark Safe Quick Promotion that already exists in Facebook I
 
 <img src="https://github.com/AlanFermat/AlanFermat.github.io/blob/master/assets/images/fb5.png?raw=true">
 
-
+During the summer, I met a lot of interesting people at FB and knew what to improve on my next journey. Keep on grinding!
 
 
 
