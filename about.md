@@ -5,7 +5,7 @@ layout: page
 ![Profile Image]({{ site.url }}/{{ site.picture }})
 
 <p>Hi! This is Alan Yu! </p>
-<p>I came from Hangzhou, China and moved to Houston, Texas, USA. Currently I'm a rising junior studying mathematics and computer science at <a href="https://www.rice.edu/">Rice University</a>, Houston, TX, USA. </p>
+<p>I came from Hangzhou, China and moved to Houston, Texas, USA. Currently I'm a rising senior studying mathematics and computer science at <a href="https://www.rice.edu/">Rice University</a>, Houston, TX, USA. </p>
 
 <p> While enjoying coding, I'm also passionate about entrepreneurship, sports and music. I'm looking forward to dedicating my problem solving skills to enrich my community: </p>
 
