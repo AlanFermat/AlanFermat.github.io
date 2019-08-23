@@ -19,6 +19,8 @@ externalLink: false
 
 ## Music List
 
+This is a side project I made in leisure time for fun.
+
 This is a customized music list that will allow the users to listen to customized songs from YouTube channels. 
 
 ---
