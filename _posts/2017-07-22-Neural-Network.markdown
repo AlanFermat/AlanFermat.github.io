@@ -15,23 +15,23 @@ description: A demystification to neural network and introduction to its applica
 
 ---
 
-## What is neural network?
+## What is a neural network?
 
 ### Background 
 
-As computer sciecne students, we often heard these fancy stuffs in life: image classification, pattern recognition, convolutional neural network, machine learning, etc. Sometimes, we are so overwhelmed by the jargons in the field that we do not wanna explore the field ourselves.
+As computer science students, we often heard these fancy stuff in life: image classification, pattern recognition, convolutional neural network, machine learning, etc. Sometimes, we are so overwhelmed by the jargons in the field that we do not wanna explore the field ourselves.
 
 However, we are all human beings living in the 21st century -- <a href="https://www.tandfonline.com/doi/full/10.1080/20964471.2017.1397411"> the era of big data </a>, making techniques such as machine learning useful and meaningful for data analysis.
 
-<a href="https://en.wikipedia.org/wiki/Machine_learning">Machine learning</a> is a century-old field that recently became tremendously popular due to the demand for convenient tools facilitates data analysis. It has two intersecting subfields based on techniques, namely statistical machine lerning and neural network. Whereas statistical machine learning involves a heavy load of statistics, neural networks stress more on designing and parameter-tuning. 
+<a href="https://en.wikipedia.org/wiki/Machine_learning">Machine learning</a> is a century-old field that recently became tremendously popular due to the demand for convenient tools facilitates data analysis. It has two intersecting subfields based on techniques, namely statistical machine learning and neural network. Whereas statistical machine learning involves a heavy load of statistics, neural networks stress more on designing and parameter-tuning. 
 
 Based on the data we have, we can also divide machine learning into <a href="https://en.wikipedia.org/wiki/Supervised_learning">supervised</a> and <a href="https://en.wikipedia.org/wiki/Unsupervised_learning">unsupervised learning</a>. While supervised learning is to figure out the pattern with the guidance of a given standard, unsupervised learning is to recognize the pattern without any additional information.
 
-Neural network is one group of algorithms used for machine learning that models the data using graphs of artificial neurons. It tries to mimic how the neurons in human brains work. 
+The neural network is one group of algorithms used for machine learning that models the data using graphs of artificial neurons. It tries to mimic how the neurons in human brains work. 
 
-In this post, we will focus majorly on applying neural network to function approximation. Since we will be informed of what our outputs should look like, we will be discussing about supervised neural network techniques only. Moreover, for the sake of illustration we only focus on Artificial Neural Network architecture. 
+In this post, we will focus majorly on applying the neural network to function approximation. Since we will be informed of what our outputs should look like, we will be discussing about supervised neural network techniques only. Moreover, for the sake of illustration, we only focus on Artificial Neural Network architecture. 
 
-For those who are interested in Long-short Term Memory Neural Network, Convolutional Neural Network and Generative Adversarial Network, please check out the links below:
+For those who are interested in Long-short Term Memory Neural Network, Convolutional Neural Network, and Generative Adversarial Network, please check out the links below:
 
 <ul> 
 	<li> Long-short Term Memory: 
@@ -59,9 +59,9 @@ For those who are interested in Long-short Term Memory Neural Network, Convoluti
 		<figcaption class="caption">Illustration for one layer</figcaption>
 	</div>
 	<div class="toright">
-		<p> A neuron network is a layer-by-layer structure. At each layer, it consists of processing elements (referred as PEs afterwards) and transfer functions. </p>
-		<p> Usually, the first layer of a network is called input layer, the last layer is called output layer and the layers in between are hidden layers. </p>
-		<p> The architecture of a neuron network is composed of the way that these layers combine together. For example, a network with 3-3-1 is a neural network where the first and second layer consist of 3 PEs and the output layer is of 1 PE. Note that the neural network on the left is of the topology N-1 with only two layers, one input layer and one output layer. </p>
+		<p> A neuron network is a layer-by-layer structure. At each layer, it consists of processing elements (referred to as PEs afterward) and transfer functions. </p>
+		<p> Usually, the first layer of a network is called the input layer, the last layer is called the output layer and the layers in between are hidden layers. </p>
+		<p> The architecture of a neuron network is composed of the way that these layers combine together. For example, a network with 3-3-1 is a neural network where the first and second layer consist of 3 PEs and the output layer is of 1 PE. Note that the neural network on the left is of the topology N-1 with only two layers, one input layer, and one output layer. </p>
 	</div>
 </div>
 

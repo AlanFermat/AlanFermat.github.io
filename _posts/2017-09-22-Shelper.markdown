@@ -23,7 +23,7 @@ This is an API built by 4 members within 48 hours during Rice Hackathon.
 
 This API connects emergency shelters with people who are looking for help during Hurricane Harvey. 
 
-I implemented customized Google Map API (JSON and react.js) and visualized the live data on the screen from database (MongoDB). We deployed this API as a web app via Flask.
+I implemented a customized Google Map API (JSON and react.js) and visualized the live data on the screen from a database (MongoDB). We deployed this API as a web app via Flask.
 
 A user can use this app to login, either seeking for active shelters or donating necessities to the nearby shelters. 
 

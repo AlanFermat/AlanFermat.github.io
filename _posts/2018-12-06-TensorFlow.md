@@ -17,20 +17,20 @@ description: An introduction to Google's open-source neural network framework te
 
 ## Background 
 
-After reading my blog about neural networks, some readers had questions on how to avoid implementing the neural network from the scratch. They found it very hard to do backpropagations by manually taking derivatives for each processing element at each layer in the neural network. The computation is time-consuming and could sometimes be totally messed up if you make a single mistake.
+After reading my blog about neural networks, some readers had questions on how to avoid implementing the neural network from scratch. They found it very hard to do backpropagations by manually taking derivatives for each processing element at each layer in the neural network. The computation is time-consuming and could sometimes be totally messed up if you make a single mistake.
 
 Therefore, today I wanna introduce this amazing neural network framework by Google to you: TensorFlow. It's a relatively high-level framework facilitating neural network implementations. 
 
-Tensorflow helps define a computation graph where neoral networks are structured and engineered in a particular way. People can tune parameters and visualize the computation graph so that the lower-level computation part of neural network is hidden (like taking nasty derivative in backpropagation).
+Tensorflow helps define a computation graph where neural networks are structured and engineered in a particular way. People can tune parameters and visualize the computation graph so that the lower-level computation part of neural network is hidden (like taking nasty derivative in backpropagation).
 
 In the following blog, we will be introducing you tensorflow by two simple examples. 
 
-Note that in this blog, I will walk you through the basics of tensorflow mainly by 
+Note that in this blog, I will walk you through the basics of Tensorflow mainly by 
 these two examples (instead of throw out all the syntax and formulas).
 
 ## MLP (Multi-Layer Perceptron)
 
-This is a illustration of how you would use tensorflow using MNIST data set (a data set that calssifies hand-written digits). The data has 784 dimensions (784 columns). The amount (number of rows) of training data and testing data is upon our choice. Because it's a digit recognition data, we have 10 classes in total. 
+This is an illustration of how you would use Tensorflow using MNIST data set (a data set that classifies hand-written digits). The data has 784 dimensions (784 columns). The amount (number of rows) of training data and testing data is upon our choice. Because it's a digit recognition data, we have 10 classes in total. 
 
 
 We first import the data and the packages that are needed.
@@ -82,7 +82,7 @@ You will get similar image as shown below
 
 Now we want to build our neural network. We know from the previous post that a neural network is basically a variation of matrix multiplication. 
 
-By convention, tensorflow will require people to have place holders for the data. Therefore, we will have our place holder for x (input data) and y (labels) as below.
+By convention, Tensorflow will require people to have place holders for the data. Therefore, we will have our place holder for x (input data) and y (labels) as below.
 
 ```
 dimension = 784
@@ -91,7 +91,7 @@ x_ = tf.placeholder(tf.float32, shape=[None, dimension])
 y_ = tf.placeholder(tf.float32, shape=[None, numClass])
 ```
 
-One interesting about tensorflow is that we will define the work flow of neural network before running anything. 
+One interesting about Tensorflow is that we will define the workflow of a neural network before running anything. 
 
 Here, we want to construct a neural network composed of one hidden layer with 28 hidden units. 
 
@@ -103,7 +103,7 @@ W2 = tf.Variable(np.random.normal (0, 0.05, (hiddenUnits, numClass)),dtype=tf.fl
 b2 = tf.Variable(np.zeros((1, numClass)), dtype=tf.float32)
 ```
 
-With selection of proper transfer function, we can have our neural net work as follows, (we use softmax function in the end to smoothly classify digits)
+With the selection of proper transfer function, we can have our neural network as follows, (we use softmax function, in the end, to smoothly classify digits)
 
 ```
 output0 = tf.tanh(tf.matmul(x_, W) + b) 
@@ -117,7 +117,7 @@ Now we will define our loss function as follows
 loss = tf.reduce_mean(-tf.reduce_sum(y_ * tf.log(y), reduction_indices=[1]))
 ```
 
-This function is taking the log of all our predictions y (whose values range from 0 to 1) and element wise multiplying by the example’s true value y_. If the log function for each value is close to zero, it will make the value a large negative number (i.e., _-np.log(0.01) = 4.6_), and if it is close to 1, it will make the value a small negative number (i.e., _-np.log(0.99) = 0.1_).
+This function is taking the log of all our predictions y (whose values range from 0 to 1) and element-wise multiplying by the example’s true value y_. If the log function for each value is close to zero, it will make the value a large negative number (i.e., _-np.log(0.01) = 4.6_), and if it is close to 1, it will make the value a small negative number (i.e., _-np.log(0.99) = 0.1_).
 
 
 Then we will define our learning rate (this will be explored heuristically and empirically).
@@ -135,7 +135,7 @@ accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 ```
 
 
-After telling our neural network how to train the data and optimize the weights, we can run the computation graph by starting a tensorflow session. In the session, we shall first initialize all the variables (it's like declaring them as nodes in the computation graph). Then we iteratively train the model with fixed training steps.
+After telling our neural network how to train the data and optimize the weights, we can run the computation graph by starting a Tensorflow session. In the session, we shall first initialize all the variables (it's like declaring them as nodes in the computation graph). Then we iteratively train the model with fixed training steps.
 
 Note that when we run the session, we have to map the dummy variable in the original computation graph to the actual data that we are interested in. For example, here x_ is a dummy variable, and we are actually training on data x_train so we will build a feed_dict for such substitution.
 
@@ -166,9 +166,9 @@ Training Step:900  Accuracy =  0.8645  Loss = 0.59918994
 Training Step:1000  Accuracy =  0.8721  Loss = 0.5599681
 ```
 
-Note that we only run 1000 steps to get this decent result, you can try to run more steps to get much better result!
+Note that we only run 1000 steps to get this decent result, you can try to run more steps to get a much better result!
 
-In the end, we will visualize how we calssify the 11th training example as follows. Here, variable "i" is just for naming files while "num" is the order of the training example we are looking at.
+In the end, we will visualize how we classify the 11th training example as follows. Here, variable "i" is just for naming files while "num" is the order of the training example we are looking at.
 
 ```
 def display_compare(num, i):
@@ -196,7 +196,7 @@ with tf.Session() as sess:
 
 ```
 
-Now, it will save the middle process as "png" file in your working directory. Running this, you should get something similar to the following (still 1000 iterations as before),
+Now, it will save the middle process as ".png" file in your working directory. Running this, you should get something similar to the following (still 1000 iterations as before),
 
 <div>
     Start with:
@@ -221,7 +221,7 @@ See my next post!
 
 ## A Few Notes
 
-There is an amazing online course by Stanford that will familiarize you with tensorflow. The course is CS20.
+There is an amazing online course by Stanford that will familiarize you with Tensorflow. The course is called CS20.
 
 You can check out the link <a href="https://web.stanford.edu/class/cs20si/syllabus.html">here</a>. 
 

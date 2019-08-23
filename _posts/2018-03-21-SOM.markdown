@@ -1,5 +1,5 @@
 ---
-title: "Self-organizing Map -- unsupervised neural network"
+title: "a self-organizing Map -- unsupervised neural network"
 layout: post
 date: 2018-03-21 22:44
 image: /assets/images/som1.jpg
@@ -7,28 +7,28 @@ headerImage: true
 tag:
 - Machine Learning
 - Neural Network
-- Self-organizing Map
+- a self-organizing Map
 - Unsupervised Learning
 star: true
 category: blog
 author: Alan Yu
-description: A brief tutorial of self-organizing map and its implementation through Matlab
+description: A brief tutorial of the self-organizing map and its implementation through Matlab
 ---
 
 ## What is unsupervised learning?
 
-<a href="https://en.wikipedia.org/wiki/Unsupervised_learning">Unsupervised machine learning</a> is the machine learning task of inferring a function that describes the structure of "unlabeled" data. The goal for unsupervised learning is to detect some pattern behind a mass of data without any priori knowledge about the data. Sounds like roman policier? That's right!
+<a href="https://en.wikipedia.org/wiki/Unsupervised_learning">Unsupervised machine learning</a> is the machine learning task of inferring a function that describes the structure of "unlabeled" data. The goal for unsupervised learning is to detect some pattern behind a mass of data without any prior knowledge about the data. Sounds like roman policier? That's right!
 
 Since the beginning of this field, a lot of unsupervised learning algorithms has been developed and applied widely. Algorithms like K-Means, hierarchical clustering, and principal component analysis are crucial tools in industry and academia. 
 
 Here is a useful <a href="https://medium.com/machine-learning-for-humans/unsupervised-learning-f45587588294">link</a> that explains the concepts of unsupervised learning in more detail.
 
-## What is self-organizing map?
+## What is a self-organizing map?
 
-<a href="https://en.wikipedia.org/wiki/Self-organizing_map">Self-organizing map (SOM)
-</a> is an amazing neural network. The number of published research papers related to self-organizing map ranked the first place from 2010 to 2015. 
+<a href="https://en.wikipedia.org/wiki/a self-organizing_map">a self-organizing map (SOM)
+</a> is an amazing neural network. The number of published research papers related to a self-organizing map ranked the first place from 2010 to 2015. 
 
-In this neural network, the output layer is a grid in which each neuron represents a value that tries to approximate the corresponding input value. The interesting part is that each neuron is actually a weight that needs to be tuned throughout the training process. The goal for this neuron network is to learn representation of all input data points on neurons of the output grid and then cluster the data via similarities between neurons. 
+In this neural network, the output layer is a grid in which each neuron represents a value that tries to approximate the corresponding input value. The interesting part is that each neuron is actually a weight that needs to be tuned throughout the training process. The goal for this neuron network is to learn the representation of all input data points on neurons of the output grid and then cluster the data via similarities between neurons. 
 
 <div class="side-by-side">
 	<div class="toleft">
@@ -36,7 +36,7 @@ In this neural network, the output layer is a grid in which each neuron represen
 		<figcaption class="caption">Illustrion of SOM</figcaption>
 	</div>
 	<div class="toright">
-		<p>The major paramter is the number of neurons in the grid, called prototypes. The initialization of weights, learning rates and stopping criteria are the same as those of other neural networks.</p> 
+		<p>The major parameter is the number of neurons in the grid, called prototypes. The initialization of weights, learning rates and stopping criteria are the same as those of other neural networks.</p> 
 		<p>As we can see from the left, each data point is mapped to a neuron that best approximates the value of that data point. Notice that the learning process is to adjust weights so that we minimize the "distance" between the input data point and the neuron that represents it. </p>
 	</div>
 	<div class="toleft">
@@ -44,15 +44,15 @@ In this neural network, the output layer is a grid in which each neuron represen
 		<figcaption class="caption">Topological preserving</figcaption>
 	</div>
 	<div class="toright">
-		<p> The most magic part about self-organizing map is that it is topologically preserved meaning that the neighbors of the original data point *A* will be mapped to the neighbors of *A's* representation in the output grid.</p>
-		<p> This property makes self-organizing map unique among all clustering algorithms. Since topological preservation can help the neural network recognize the patterns easily when the number of clusters are huge, self-organizing map is especially good at recognizing terrains.</p>
+		<p> The most magic part about a self-organizing map is that it is topologically preserved meaning that the neighbors of the original data point *A* will be mapped to the neighbors of *A's* representation in the output grid.</p>
+		<p> This property makes a self-organizing map unique among all clustering algorithms. Since topological preservation can help the neural network recognize the patterns easily when the number of clusters is huge, a self-organizing map is especially good at recognizing terrains.</p>
 	</div>
 	<div class="toleft">
 		<img class="image" src="https://github.com/AlanFermat/AlanFermat.github.io/blob/master/assets/images/som4.jpg?raw=true" alt="Alt Text">
 		<figcaption class="caption">Mathematical formula</figcaption>
 	</div>
 	<div class="toright">
-		<p> Here comes the mathematical formula for SOM. As we can see, one round of training consists of two steps. The first one is competition in which we will choose a prototype closest to the given pattern based on the information we have. At the second step, we update our weight based on the a predefined distance of our prototype from the original pattern. </p>
+		<p> Here comes the mathematical formula for SOM. As we can see, one round of training consists of two steps. The first one is a competition algorithm where we will choose a prototype closest to the given pattern based on the information we have. At the second step, we update our weight based on a predefined distance of our prototype from the original pattern. </p>
 		<p>Note that the *h* function that is used in the updating is analogous to gradient descent in artificial neural networks. However, normally we will use Manhattan distance here instead of Euclidean to preserve the topological structure. </p>
 	</div>
 
@@ -67,7 +67,7 @@ After the above explanation, I know some of you are still unclear about how it w
 
 ## Can you show me an example?
 
-First we generate four sets of 3-dimensional random Gaussian vectors with 1000 points in each set, each with a variance of __0.1__. Then we center the data sets at __(0,0,0), (0,7,0), (7,0,0), and (7,7,0)__, respectively.
+First, we generate four sets of 3-dimensional random Gaussian vectors with 1000 points in each set, each with a variance of __0.1__. Then we center the data sets at __(0,0,0), (0,7,0), (7,0,0), and (7,7,0)__, respectively.
 
 We will train a SOM with 100 prototypes trying to cluster the data into 4 clusters.
 
@@ -93,7 +93,7 @@ Source codes are uploaded <a href="afs">here</a>.
 	</div>
 </div>
 
-<p>From the result, we can see that most prototypes are bundled and gathered to four corners. Because there are no cluster in the middle, the grid is stretched out tightly making sure maximum of prototypes can match the data points optimally.</p>
+<p>From the result, we can see that most prototypes are bundled and gathered to four corners. Because there is no cluster in the middle, the grid is stretched out tightly so that maximum of prototypes can match the data points optimally.</p>
 
 <p>Source code is <a href="https://github.com/AlanFermat/Blogs/blob/master/SOM/SOM.m">here</a>.</p>
 

@@ -1,5 +1,5 @@
 ---
-title: "Text mining for finding the best place pursuing medical research"
+title: "Text mining for finding the best place to pursue medical research"
 layout: post
 date: 2016-04-11
 <!-- tag: jekyll -->
@@ -19,6 +19,8 @@ externalLink: false
 
 ## Text mining for finding the best place pursuing medical research
 
+This is an open-end project that I worked with a team in a Statistic class at Rice University.
+
 ### Where is the best place for medical research?
 
 We explore where the best places for health research and innovation are, and how this relates to the rates of specific illnesses.
@@ -29,9 +31,9 @@ In order to figure out where the best places are, we first analyze funding on th
 
 Based on this high-level analysis, we find location is the most important factor. We deep dive into location, specifically city-level analysis.
 
-We breakdown the importance into three categories, which we call: access to talent, access to resources, and access to funding. Based on these three dimensions, we rank the top 11 cities. Based on our ranking system. New York is the top city, while Seattle is the bottom among the 11 cities.
+We breakdown the importance into three categories, which we call: access to talent, access to resources, and access to funding. Based on these three dimensions, we rank the top 11 cities. Based on our ranking system. New York is the top city, while Seattle is the bottom of the 11 cities.
 
-The results are presented beautifully via ggplot and wordcloud using R!
+The results are presented beautifully via _ggplot_ and _wordcloud_ using R!
 
 ---
 

@@ -18,9 +18,9 @@ externalLink: false
 ![Screenshot](https://raw.githubusercontent.com/AlanFermat/twitterhigherlower/master/ingame.png)
 
 ## Twitter Lower and Higher 
-This is a web game developed in 24 hours during Rice Hackathon that will allow users to guess which person has a higher Twitter followers. 
+This is a web game developed in 24 hours during Rice Hackathon that will allow users to guess which person has higher Twitter followers. 
 
-In each round, you will be given two celebrities or famous organizations. You need to guess which one of the two has a higher followers on twitter.
+In each round, you will be given two celebrities or famous organizations. You need to guess which one of the two has higher followers on twitter.
 
 If your answer is correct, you can go to the next round; otherwise, the game is over and you will receive your scores.
 
