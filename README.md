@@ -1,3 +1,3 @@
 This is a portfolio website for Alan Yu
 
-See _imalanyu.com_
+See [imalanyu.com](https://imalanyu.com/)
