@@ -1,27 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-08-16T16:16:21-05:00</updated><id>http://localhost:4000/</id><title type="html">Alan Yu</title><subtitle>A blog about technology and stuff related</subtitle><entry><title type="html">Music List</title><link href="http://localhost:4000/music-list/" rel="alternate" type="text/html" title="Music List" /><published>2019-08-16T00:00:00-05:00</published><updated>2019-08-16T00:00:00-05:00</updated><id>http://localhost:4000/music-list</id><content type="html" xml:base="http://localhost:4000/music-list/">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/AlanFermat/musicList/master/demo_video_preview.png&quot; alt=&quot;Screenshot&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-09-30T10:39:40-05:00</updated><id>http://localhost:4000/</id><title type="html">Alan Yu</title><subtitle>A blog about technology and stuff related</subtitle><entry><title type="html">Music List</title><link href="http://localhost:4000/music-list/" rel="alternate" type="text/html" title="Music List" /><published>2019-08-16T00:00:00-05:00</published><updated>2019-08-16T00:00:00-05:00</updated><id>http://localhost:4000/music-list</id><content type="html" xml:base="http://localhost:4000/music-list/">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/AlanFermat/musicList/master/demo_video_preview.png&quot; alt=&quot;Screenshot&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;music-list&quot;&gt;Music List&lt;/h2&gt;
+
+&lt;p&gt;This is a side project I made in leisure time for fun.&lt;/p&gt;
 
 &lt;p&gt;This is a customized music list that will allow the users to listen to customized songs from YouTube channels.&lt;/p&gt;
 
 &lt;hr /&gt;
 
 &lt;p&gt;Check it out &lt;a href=&quot;https://github.com/AlanFermat/musicList&quot;&gt;here&lt;/a&gt;.
-If you need some help, just &lt;a href=&quot;https://github.com/AlanFermat/musicList/issues&quot;&gt;tell me&lt;/a&gt;.&lt;/p&gt;</content><author><name>Alan Yu</name></author><category term="project" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://raw.githubusercontent.com/AlanFermat/musicList/master/youtube.png" /></entry><entry><title type="html">My internship @Facebook Summer 2019</title><link href="http://localhost:4000/FB-Intern-Experience/" rel="alternate" type="text/html" title="My internship @Facebook Summer 2019" /><published>2019-08-15T00:00:00-05:00</published><updated>2019-08-15T00:00:00-05:00</updated><id>http://localhost:4000/FB-Intern-Experience</id><content type="html" xml:base="http://localhost:4000/FB-Intern-Experience/">&lt;p&gt;During my internship at Facebook in summer 2019, I learned a lot about engineering in real-world settings. I was assigned to Crisis Response team. The core product the team works on is Crisis Response Page. When natural disasters occur(for example, an earthquake), the users can use the page to know if their friends are marked themselves safe and if other people in the affected area are requesting or offering help.&lt;/p&gt;
+If you need some help, just &lt;a href=&quot;https://github.com/AlanFermat/musicList/issues&quot;&gt;tell me&lt;/a&gt;.&lt;/p&gt;</content><author><name>Alan Yu</name></author><category term="project" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://raw.githubusercontent.com/AlanFermat/musicList/master/youtube.png" /></entry><entry><title type="html">My internship @Facebook Summer 2019</title><link href="http://localhost:4000/FB-Intern-Experience/" rel="alternate" type="text/html" title="My internship @Facebook Summer 2019" /><published>2019-08-15T00:00:00-05:00</published><updated>2019-08-15T00:00:00-05:00</updated><id>http://localhost:4000/FB-Intern-Experience</id><content type="html" xml:base="http://localhost:4000/FB-Intern-Experience/">&lt;p&gt;During my internship at Facebook in summer 2019, I learned a lot about engineering in real-world settings. I was assigned to the Crisis Response team. The core product the team works on is the Crisis Response Page. When natural disasters occur(for example, an earthquake), the users can use the page to know if their friends are marked themselves safe and if other people in the affected area are requesting or offering help.&lt;/p&gt;
 
-&lt;p&gt;My main projects are on the FBLite interface. FBLite is an interface that generally targets on the lower-end devices with less battery and processing power. A large portion of the users of FBLite is from developing countries. I built two main projects on FBLite for the team during the summer.&lt;/p&gt;
+&lt;p&gt;My main projects are on the FBLite interface. FBLite is an interface that generally targets the lower-end devices with less battery and processing power. A large portion of the users of FBLite is from developing countries. I built two main projects on FBLite for the team during the summer.&lt;/p&gt;
 
 &lt;p&gt;My first project is to update the top of the page (“Crisis header”) with a new design. The new design looks like below.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://github.com/AlanFermat/AlanFermat.github.io/blob/master/assets/images/fb2.png?raw=true&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Based on the design I went through scoping, coding, polishing, dogfooding(let the member of the team to test the product I built), lodestone testing(let the third-party testers to test the product) and A/B testing(compare the user engagements of the new design with the old one). At the end, the experimentation showed a lot of positive signals on relevant metrics like user engagements and the team decided to ship this new header after discussion.&lt;/p&gt;
+&lt;p&gt;Based on the design I went through scoping, coding, polishing, dogfooding(let the member of the team to test the product I built), lodestone testing(let the third-party testers to test the product) and A/B testing(compare the user engagements of the new design with the old one). In the end, the experimentation showed a lot of positive signals on relevant metrics like user engagements and the team decided to ship this new header after discussion.&lt;/p&gt;
 
 &lt;p&gt;My second project is to build a unified feed, a more comprehensive feed listing for the Crisis Page. Originally, only two types of posts were shown in the feed: offer help and request help. In the new design, I wanted to include the posts that provided information for the users. For example, a user could post about the traffic status of a road in the affected area without classifying the post as “Offering Help” or “Requesting Help.” The new design looks like below.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://github.com/AlanFermat/AlanFermat.github.io/blob/master/assets/images/fb3.png?raw=true&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;In this project, I made the design on my own based on the parity in Facebook IOS/Android. I also went through scoping out the project, coding, polishing, and dogfooding(let the member of the team to test the product I built). By the end of my internship, I did not start the lodestone testing(let the third-party testers to test the product) yet.&lt;/p&gt;
+&lt;p&gt;In this project, I made the design on my own based on the parity in Facebook IOS/Android. I also went through scoping out the project, coding, polishing, and dogfooding(let the member of the team test the product I built). By the end of my internship, I did not start the lodestone testing(let the third-party testers to test the product) yet.&lt;/p&gt;
 
 &lt;p&gt;But if given time, lodestone testing and experimentation would be the next steps for this project.&lt;/p&gt;
 
@@ -33,9 +35,9 @@ If you need some help, just &lt;a href=&quot;https://github.com/AlanFermat/music
 
 &lt;p&gt;&lt;img src=&quot;https://github.com/AlanFermat/AlanFermat.github.io/blob/master/assets/images/fb5.png?raw=true&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;During the summer, I met a lot of interesting people at FB and knew what to improve on my next journey. Keep on grinding!&lt;/p&gt;</content><author><name>Alan Yu</name></author><category term="blog" /><category term="Internship" /><category term="Facebook" /><category term="Job" /><category term="Crisis Response" /><summary type="html">During my internship at Facebook in summer 2019, I learned a lot about engineering in real-world settings. I was assigned to Crisis Response team. The core product the team works on is Crisis Response Page. When natural disasters occur(for example, an earthquake), the users can use the page to know if their friends are marked themselves safe and if other people in the affected area are requesting or offering help.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/fb1.png" /></entry><entry><title type="html">TensorFlow - not another introduction II</title><link href="http://localhost:4000/LSTM/" rel="alternate" type="text/html" title="TensorFlow - not another introduction II" /><published>2019-01-18T00:00:00-06:00</published><updated>2019-01-18T00:00:00-06:00</updated><id>http://localhost:4000/LSTM</id><content type="html" xml:base="http://localhost:4000/LSTM/">&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
+&lt;p&gt;During the summer, I met a lot of interesting people at FB and knew what to improve on my next journey. Keep on grinding!&lt;/p&gt;</content><author><name>Alan Yu</name></author><category term="blog" /><category term="Internship" /><category term="Facebook" /><category term="Job" /><category term="the Crisis Response" /><summary type="html">During my internship at Facebook in summer 2019, I learned a lot about engineering in real-world settings. I was assigned to the Crisis Response team. The core product the team works on is the Crisis Response Page. When natural disasters occur(for example, an earthquake), the users can use the page to know if their friends are marked themselves safe and if other people in the affected area are requesting or offering help.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/fb1.png" /></entry><entry><title type="html">TensorFlow - not another introduction II</title><link href="http://localhost:4000/LSTM/" rel="alternate" type="text/html" title="TensorFlow - not another introduction II" /><published>2019-01-18T00:00:00-06:00</published><updated>2019-01-18T00:00:00-06:00</updated><id>http://localhost:4000/LSTM</id><content type="html" xml:base="http://localhost:4000/LSTM/">&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
 
-&lt;p&gt;In this post we will introduce a more interesting, state-of-art neural network model to the readers: Long-short-term-memory Network.&lt;/p&gt;
+&lt;p&gt;In this post, we will introduce a more interesting, state-of-art neural network model to the readers: Long-short-term-memory Network.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Long-short-term-memory network&lt;/em&gt; or &lt;em&gt;LSTM network&lt;/em&gt; for short is a special case in Recurrent Neural Network that tries to avoid the “vanishing gradient problem.”&lt;/p&gt;
 
@@ -65,28 +67,28 @@ If you need some help, just &lt;a href=&quot;https://github.com/AlanFermat/music
 	&lt;/div&gt;
 	&lt;div class=&quot;toright&quot;&gt;
 		&lt;p&gt;Note that the derivative of loss with respect to activation function is often less than 1.&lt;/p&gt;
-		&lt;p&gt;Think about the derivatice with respect to the logistic function on the left for example, we know that maximum value is reached when the activation function takes the value of 0.5 which is less than 1.&lt;/p&gt;
-		&lt;p&gt;If we have a deep RNN and apply that multiplier constantly as we backprop the errors to the input layer, the derived gradient is approaching zero. &lt;/p&gt;
+		&lt;p&gt;Think about the derivative with respect to the logistic function on the left for example, we know that maximum value is reached when the activation function takes the value of 0.5 which is less than 1.&lt;/p&gt;
+		&lt;p&gt;If we have a deep RNN and apply that multiplier constantly as we backpropagate the errors to the input layer, the derived gradient is approaching zero. &lt;/p&gt;
 		&lt;p&gt;The error from the output layer may not be able to influence the upfront layers as they are too far.&lt;/p&gt;
 		&lt;p&gt;This pattern would make the training stagnant as no correction would be made in the upfront layers due to the errors in the output.&lt;/p&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;You can see more detailed explanations on the vanishing gradient problem below.&lt;/p&gt;
+&lt;p&gt;You can see more detailed explanations of the vanishing gradient problem below.&lt;/p&gt;
 
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/qO_NLVjD6zE&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 &lt;h2 id=&quot;lstm&quot;&gt;LSTM&lt;/h2&gt;
 
 &lt;h3 id=&quot;lstm-module&quot;&gt;LSTM Module&lt;/h3&gt;
-&lt;p&gt;Walla! Here comes the savior – LSTM network. In LSTM net, we don’t push the long term memory through the activation function, i.e. we don’t backprop the long term memory of an error all the way to the input layer. Thus, we don’t have a vanishing gradient problem!&lt;/p&gt;
+&lt;p&gt;Walla! Here comes the savior – LSTM network. In LSTM net, we don’t push the long term memory through the activation function, i.e. we don’t backpropagate the long term memory of an error all the way to the input layer. Thus, we don’t have a vanishing gradient problem!&lt;/p&gt;
 
 &lt;p&gt;Let’s look at the LSTM “modules” as below.&lt;/p&gt;
 
 &lt;p&gt;In the module,&lt;/p&gt;
 &lt;ol&gt;
   &lt;li&gt;Vector travels along the lines&lt;/li&gt;
-  &lt;li&gt;A circle/oval represents application of a function to each dimension in a vector&lt;/li&gt;
+  &lt;li&gt;A circle/oval represents applications of a function to each dimension in a vector&lt;/li&gt;
   &lt;li&gt;A rectangle represents a neural network&lt;/li&gt;
   &lt;li&gt;𝞂 stands for a logistic activation layer at the top&lt;/li&gt;
   &lt;li&gt;&lt;em&gt;tanh&lt;/em&gt; means a hyperbolic tangent activation layer at the top&lt;/li&gt;
@@ -151,7 +153,7 @@ If you need some help, just &lt;a href=&quot;https://github.com/AlanFermat/music
 
 &lt;h2 id=&quot;code-snippets&quot;&gt;Code Snippets&lt;/h2&gt;
 
-&lt;p&gt;With the help of tensorflow framework, creating a LSTM unit is quite straightforward.&lt;/p&gt;
+&lt;p&gt;With the help of Tensorflow framework, creating an LSTM unit is quite straightforward.&lt;/p&gt;
 
 &lt;p&gt;Let’s take a brief walk-through.&lt;/p&gt;
 
@@ -176,11 +178,11 @@ for iter in range(maxSeqLen):
 
 &lt;p&gt;where &lt;em&gt;input&lt;/em&gt; is your stacked input variables.&lt;/p&gt;
 
-&lt;p&gt;Note that &lt;em&gt;lstm_output&lt;/em&gt; is your final output, you can do a feedforward or softmax afterwards to regularize it.&lt;/p&gt;
+&lt;p&gt;Note that &lt;em&gt;lstm_output&lt;/em&gt; is your final output, you can do a feedforward or softmax afterward to regularize it.&lt;/p&gt;
 
 &lt;p&gt;And…, that’s it.&lt;/p&gt;
 
-&lt;p&gt;Within five lines you could set up a LSTM module and you can choose optimizer to train the model(how to do that? check out the &lt;a href=&quot;https://imalanyu.com/TensorFlow/&quot;&gt;TensorFlow Tutorial Post&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Within five lines you could set up an LSTM module and you can choose optimizer to train the model(how to do that? check out the &lt;a href=&quot;https://imalanyu.com/TensorFlow/&quot;&gt;TensorFlow Tutorial Post&lt;/a&gt;)&lt;/p&gt;
 
 &lt;h2 id=&quot;more-about-lstm&quot;&gt;More About LSTM&lt;/h2&gt;
 
@@ -190,20 +192,20 @@ for iter in range(maxSeqLen):
 	&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=WCUNPb-5EYI&quot;&gt;Video Tutorial&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;</content><author><name>Alan Yu</name></author><category term="blog" /><category term="Machine Learning" /><category term="Neural Network" /><category term="Google" /><category term="Computation Framework" /><summary type="html">Background</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/tensorflow.jpg" /></entry><entry><title type="html">TensorFlow - not another introduction I</title><link href="http://localhost:4000/TensorFlow/" rel="alternate" type="text/html" title="TensorFlow - not another introduction I" /><published>2018-12-06T00:00:00-06:00</published><updated>2018-12-06T00:00:00-06:00</updated><id>http://localhost:4000/TensorFlow</id><content type="html" xml:base="http://localhost:4000/TensorFlow/">&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
 
-&lt;p&gt;After reading my blog about neural networks, some readers had questions on how to avoid implementing the neural network from the scratch. They found it very hard to do backpropagations by manually taking derivatives for each processing element at each layer in the neural network. The computation is time-consuming and could sometimes be totally messed up if you make a single mistake.&lt;/p&gt;
+&lt;p&gt;After reading my blog about neural networks, some readers had questions on how to avoid implementing the neural network from scratch. They found it very hard to do backpropagations by manually taking derivatives for each processing element at each layer in the neural network. The computation is time-consuming and could sometimes be totally messed up if you make a single mistake.&lt;/p&gt;
 
 &lt;p&gt;Therefore, today I wanna introduce this amazing neural network framework by Google to you: TensorFlow. It’s a relatively high-level framework facilitating neural network implementations.&lt;/p&gt;
 
-&lt;p&gt;Tensorflow helps define a computation graph where neoral networks are structured and engineered in a particular way. People can tune parameters and visualize the computation graph so that the lower-level computation part of neural network is hidden (like taking nasty derivative in backpropagation).&lt;/p&gt;
+&lt;p&gt;Tensorflow helps define a computation graph where neural networks are structured and engineered in a particular way. People can tune parameters and visualize the computation graph so that the lower-level computation part of neural network is hidden (like taking nasty derivative in backpropagation).&lt;/p&gt;
 
 &lt;p&gt;In the following blog, we will be introducing you tensorflow by two simple examples.&lt;/p&gt;
 
-&lt;p&gt;Note that in this blog, I will walk you through the basics of tensorflow mainly by 
+&lt;p&gt;Note that in this blog, I will walk you through the basics of Tensorflow mainly by 
 these two examples (instead of throw out all the syntax and formulas).&lt;/p&gt;
 
 &lt;h2 id=&quot;mlp-multi-layer-perceptron&quot;&gt;MLP (Multi-Layer Perceptron)&lt;/h2&gt;
 
-&lt;p&gt;This is a illustration of how you would use tensorflow using MNIST data set (a data set that calssifies hand-written digits). The data has 784 dimensions (784 columns). The amount (number of rows) of training data and testing data is upon our choice. Because it’s a digit recognition data, we have 10 classes in total.&lt;/p&gt;
+&lt;p&gt;This is an illustration of how you would use Tensorflow using MNIST data set (a data set that classifies hand-written digits). The data has 784 dimensions (784 columns). The amount (number of rows) of training data and testing data is upon our choice. Because it’s a digit recognition data, we have 10 classes in total.&lt;/p&gt;
 
 &lt;p&gt;We first import the data and the packages that are needed.&lt;/p&gt;
 
@@ -248,7 +250,7 @@ display_digit(ran.randint(0, x_train.shape[0]))
 
 &lt;p&gt;Now we want to build our neural network. We know from the previous post that a neural network is basically a variation of matrix multiplication.&lt;/p&gt;
 
-&lt;p&gt;By convention, tensorflow will require people to have place holders for the data. Therefore, we will have our place holder for x (input data) and y (labels) as below.&lt;/p&gt;
+&lt;p&gt;By convention, Tensorflow will require people to have place holders for the data. Therefore, we will have our place holder for x (input data) and y (labels) as below.&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dimension = 784
 numClass = 10
@@ -256,7 +258,7 @@ x_ = tf.placeholder(tf.float32, shape=[None, dimension])
 y_ = tf.placeholder(tf.float32, shape=[None, numClass])
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;One interesting about tensorflow is that we will define the work flow of neural network before running anything.&lt;/p&gt;
+&lt;p&gt;One interesting about Tensorflow is that we will define the workflow of a neural network before running anything.&lt;/p&gt;
 
 &lt;p&gt;Here, we want to construct a neural network composed of one hidden layer with 28 hidden units.&lt;/p&gt;
 
@@ -267,7 +269,7 @@ W2 = tf.Variable(np.random.normal (0, 0.05, (hiddenUnits, numClass)),dtype=tf.fl
 b2 = tf.Variable(np.zeros((1, numClass)), dtype=tf.float32)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;With selection of proper transfer function, we can have our neural net work as follows, (we use softmax function in the end to smoothly classify digits)&lt;/p&gt;
+&lt;p&gt;With the selection of proper transfer function, we can have our neural network as follows, (we use softmax function, in the end, to smoothly classify digits)&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;output0 = tf.tanh(tf.matmul(x_, W) + b) 
 output1 = tf.matmul(output0, W2) + b2
@@ -279,7 +281,7 @@ y = tf.nn.softmax(output1)
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;loss = tf.reduce_mean(-tf.reduce_sum(y_ * tf.log(y), reduction_indices=[1]))
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;This function is taking the log of all our predictions y (whose values range from 0 to 1) and element wise multiplying by the example’s true value y_. If the log function for each value is close to zero, it will make the value a large negative number (i.e., &lt;em&gt;-np.log(0.01) = 4.6&lt;/em&gt;), and if it is close to 1, it will make the value a small negative number (i.e., &lt;em&gt;-np.log(0.99) = 0.1&lt;/em&gt;).&lt;/p&gt;
+&lt;p&gt;This function is taking the log of all our predictions y (whose values range from 0 to 1) and element-wise multiplying by the example’s true value y_. If the log function for each value is close to zero, it will make the value a large negative number (i.e., &lt;em&gt;-np.log(0.01) = 4.6&lt;/em&gt;), and if it is close to 1, it will make the value a small negative number (i.e., &lt;em&gt;-np.log(0.99) = 0.1&lt;/em&gt;).&lt;/p&gt;
 
 &lt;p&gt;Then we will define our learning rate (this will be explored heuristically and empirically).
 Finally, we will define our algorithm by optimizing (minimizing) loss function&lt;/p&gt;
@@ -293,7 +295,7 @@ Finally, we will define our algorithm by optimizing (minimizing) loss function&l
 accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;After telling our neural network how to train the data and optimize the weights, we can run the computation graph by starting a tensorflow session. In the session, we shall first initialize all the variables (it’s like declaring them as nodes in the computation graph). Then we iteratively train the model with fixed training steps.&lt;/p&gt;
+&lt;p&gt;After telling our neural network how to train the data and optimize the weights, we can run the computation graph by starting a Tensorflow session. In the session, we shall first initialize all the variables (it’s like declaring them as nodes in the computation graph). Then we iteratively train the model with fixed training steps.&lt;/p&gt;
 
 &lt;p&gt;Note that when we run the session, we have to map the dummy variable in the original computation graph to the actual data that we are interested in. For example, here x_ is a dummy variable, and we are actually training on data x_train so we will build a feed_dict for such substitution.&lt;/p&gt;
 
@@ -322,9 +324,9 @@ Training Step:900  Accuracy =  0.8645  Loss = 0.59918994
 Training Step:1000  Accuracy =  0.8721  Loss = 0.5599681
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Note that we only run 1000 steps to get this decent result, you can try to run more steps to get much better result!&lt;/p&gt;
+&lt;p&gt;Note that we only run 1000 steps to get this decent result, you can try to run more steps to get a much better result!&lt;/p&gt;
 
-&lt;p&gt;In the end, we will visualize how we calssify the 11th training example as follows. Here, variable “i” is just for naming files while “num” is the order of the training example we are looking at.&lt;/p&gt;
+&lt;p&gt;In the end, we will visualize how we classify the 11th training example as follows. Here, variable “i” is just for naming files while “num” is the order of the training example we are looking at.&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;def display_compare(num, i):
     x_train = mnist.train.images[num,:].reshape(1,784)
@@ -350,7 +352,7 @@ Training Step:1000  Accuracy =  0.8721  Loss = 0.5599681
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Now, it will save the middle process as “png” file in your working directory. Running this, you should get something similar to the following (still 1000 iterations as before),&lt;/p&gt;
+&lt;p&gt;Now, it will save the middle process as “.png” file in your working directory. Running this, you should get something similar to the following (still 1000 iterations as before),&lt;/p&gt;
 
 &lt;div&gt;
     Start with:
@@ -371,14 +373,14 @@ Training Step:1000  Accuracy =  0.8721  Loss = 0.5599681
 
 &lt;h2 id=&quot;a-few-notes&quot;&gt;A Few Notes&lt;/h2&gt;
 
-&lt;p&gt;There is an amazing online course by Stanford that will familiarize you with tensorflow. The course is CS20.&lt;/p&gt;
+&lt;p&gt;There is an amazing online course by Stanford that will familiarize you with Tensorflow. The course is called CS20.&lt;/p&gt;
 
 &lt;p&gt;You can check out the link &lt;a href=&quot;https://web.stanford.edu/class/cs20si/syllabus.html&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content><author><name>Alan Yu</name></author><category term="blog" /><category term="Machine Learning" /><category term="Neural Network" /><category term="Google" /><category term="Computation Framework" /><summary type="html">Background</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/tensorflow.jpg" /></entry><entry><title type="html">Twitter Higher and Lower game</title><link href="http://localhost:4000/twitter-game/" rel="alternate" type="text/html" title="Twitter Higher and Lower game" /><published>2018-04-01T00:00:00-05:00</published><updated>2018-04-01T00:00:00-05:00</updated><id>http://localhost:4000/twitter-game</id><content type="html" xml:base="http://localhost:4000/twitter-game/">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/AlanFermat/twitterhigherlower/master/ingame.png&quot; alt=&quot;Screenshot&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;twitter-lower-and-higher&quot;&gt;Twitter Lower and Higher&lt;/h2&gt;
-&lt;p&gt;This is a web game developed in 24 hours during Rice Hackathon that will allow users to guess which person has a higher Twitter followers.&lt;/p&gt;
+&lt;p&gt;This is a web game developed in 24 hours during Rice Hackathon that will allow users to guess which person has higher Twitter followers.&lt;/p&gt;
 
-&lt;p&gt;In each round, you will be given two celebrities or famous organizations. You need to guess which one of the two has a higher followers on twitter.&lt;/p&gt;
+&lt;p&gt;In each round, you will be given two celebrities or famous organizations. You need to guess which one of the two has higher followers on twitter.&lt;/p&gt;
 
 &lt;p&gt;If your answer is correct, you can go to the next round; otherwise, the game is over and you will receive your scores.&lt;/p&gt;
 
@@ -387,20 +389,20 @@ Training Step:1000  Accuracy =  0.8721  Loss = 0.5599681
 &lt;hr /&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/AlanFermat/twitterhigherlower&quot;&gt;Check it out&lt;/a&gt; here.
-If you need some help, just &lt;a href=&quot;https://github.com/AlanFermat/twitterhigherlower/issues&quot;&gt;tell me&lt;/a&gt;.&lt;/p&gt;</content><author><name>Alan Yu</name></author><category term="project" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://raw.githubusercontent.com/AlanFermat/twitterhigherlower/master/twitter.png" /></entry><entry><title type="html">Self-organizing Map – unsupervised neural network</title><link href="http://localhost:4000/SOM/" rel="alternate" type="text/html" title="Self-organizing Map -- unsupervised neural network" /><published>2018-03-21T22:44:00-05:00</published><updated>2018-03-21T22:44:00-05:00</updated><id>http://localhost:4000/SOM</id><content type="html" xml:base="http://localhost:4000/SOM/">&lt;h2 id=&quot;what-is-unsupervised-learning&quot;&gt;What is unsupervised learning?&lt;/h2&gt;
+If you need some help, just &lt;a href=&quot;https://github.com/AlanFermat/twitterhigherlower/issues&quot;&gt;tell me&lt;/a&gt;.&lt;/p&gt;</content><author><name>Alan Yu</name></author><category term="project" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://raw.githubusercontent.com/AlanFermat/twitterhigherlower/master/twitter.png" /></entry><entry><title type="html">a self-organizing Map – unsupervised neural network</title><link href="http://localhost:4000/SOM/" rel="alternate" type="text/html" title="a self-organizing Map -- unsupervised neural network" /><published>2018-03-21T22:44:00-05:00</published><updated>2018-03-21T22:44:00-05:00</updated><id>http://localhost:4000/SOM</id><content type="html" xml:base="http://localhost:4000/SOM/">&lt;h2 id=&quot;what-is-unsupervised-learning&quot;&gt;What is unsupervised learning?&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Unsupervised_learning&quot;&gt;Unsupervised machine learning&lt;/a&gt; is the machine learning task of inferring a function that describes the structure of “unlabeled” data. The goal for unsupervised learning is to detect some pattern behind a mass of data without any priori knowledge about the data. Sounds like roman policier? That’s right!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Unsupervised_learning&quot;&gt;Unsupervised machine learning&lt;/a&gt; is the machine learning task of inferring a function that describes the structure of “unlabeled” data. The goal for unsupervised learning is to detect some pattern behind a mass of data without any prior knowledge about the data. Sounds like roman policier? That’s right!&lt;/p&gt;
 
 &lt;p&gt;Since the beginning of this field, a lot of unsupervised learning algorithms has been developed and applied widely. Algorithms like K-Means, hierarchical clustering, and principal component analysis are crucial tools in industry and academia.&lt;/p&gt;
 
 &lt;p&gt;Here is a useful &lt;a href=&quot;https://medium.com/machine-learning-for-humans/unsupervised-learning-f45587588294&quot;&gt;link&lt;/a&gt; that explains the concepts of unsupervised learning in more detail.&lt;/p&gt;
 
-&lt;h2 id=&quot;what-is-self-organizing-map&quot;&gt;What is self-organizing map?&lt;/h2&gt;
+&lt;h2 id=&quot;what-is-a-self-organizing-map&quot;&gt;What is a self-organizing map?&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Self-organizing_map&quot;&gt;Self-organizing map (SOM)
-&lt;/a&gt; is an amazing neural network. The number of published research papers related to self-organizing map ranked the first place from 2010 to 2015.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/a self-organizing_map&quot;&gt;a self-organizing map (SOM)
+&lt;/a&gt; is an amazing neural network. The number of published research papers related to a self-organizing map ranked the first place from 2010 to 2015.&lt;/p&gt;
 
-&lt;p&gt;In this neural network, the output layer is a grid in which each neuron represents a value that tries to approximate the corresponding input value. The interesting part is that each neuron is actually a weight that needs to be tuned throughout the training process. The goal for this neuron network is to learn representation of all input data points on neurons of the output grid and then cluster the data via similarities between neurons.&lt;/p&gt;
+&lt;p&gt;In this neural network, the output layer is a grid in which each neuron represents a value that tries to approximate the corresponding input value. The interesting part is that each neuron is actually a weight that needs to be tuned throughout the training process. The goal for this neuron network is to learn the representation of all input data points on neurons of the output grid and then cluster the data via similarities between neurons.&lt;/p&gt;
 
 &lt;div class=&quot;side-by-side&quot;&gt;
 	&lt;div class=&quot;toleft&quot;&gt;
@@ -408,7 +410,7 @@ If you need some help, just &lt;a href=&quot;https://github.com/AlanFermat/twitt
 		&lt;figcaption class=&quot;caption&quot;&gt;Illustrion of SOM&lt;/figcaption&gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;toright&quot;&gt;
-		&lt;p&gt;The major paramter is the number of neurons in the grid, called prototypes. The initialization of weights, learning rates and stopping criteria are the same as those of other neural networks.&lt;/p&gt; 
+		&lt;p&gt;The major parameter is the number of neurons in the grid, called prototypes. The initialization of weights, learning rates and stopping criteria are the same as those of other neural networks.&lt;/p&gt; 
 		&lt;p&gt;As we can see from the left, each data point is mapped to a neuron that best approximates the value of that data point. Notice that the learning process is to adjust weights so that we minimize the &quot;distance&quot; between the input data point and the neuron that represents it. &lt;/p&gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;toleft&quot;&gt;
@@ -416,15 +418,15 @@ If you need some help, just &lt;a href=&quot;https://github.com/AlanFermat/twitt
 		&lt;figcaption class=&quot;caption&quot;&gt;Topological preserving&lt;/figcaption&gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;toright&quot;&gt;
-		&lt;p&gt; The most magic part about self-organizing map is that it is topologically preserved meaning that the neighbors of the original data point *A* will be mapped to the neighbors of *A's* representation in the output grid.&lt;/p&gt;
-		&lt;p&gt; This property makes self-organizing map unique among all clustering algorithms. Since topological preservation can help the neural network recognize the patterns easily when the number of clusters are huge, self-organizing map is especially good at recognizing terrains.&lt;/p&gt;
+		&lt;p&gt; The most magic part about a self-organizing map is that it is topologically preserved meaning that the neighbors of the original data point *A* will be mapped to the neighbors of *A's* representation in the output grid.&lt;/p&gt;
+		&lt;p&gt; This property makes a self-organizing map unique among all clustering algorithms. Since topological preservation can help the neural network recognize the patterns easily when the number of clusters is huge, a self-organizing map is especially good at recognizing terrains.&lt;/p&gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;toleft&quot;&gt;
 		&lt;img class=&quot;image&quot; src=&quot;https://github.com/AlanFermat/AlanFermat.github.io/blob/master/assets/images/som4.jpg?raw=true&quot; alt=&quot;Alt Text&quot; /&gt;
 		&lt;figcaption class=&quot;caption&quot;&gt;Mathematical formula&lt;/figcaption&gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;toright&quot;&gt;
-		&lt;p&gt; Here comes the mathematical formula for SOM. As we can see, one round of training consists of two steps. The first one is competition in which we will choose a prototype closest to the given pattern based on the information we have. At the second step, we update our weight based on the a predefined distance of our prototype from the original pattern. &lt;/p&gt;
+		&lt;p&gt; Here comes the mathematical formula for SOM. As we can see, one round of training consists of two steps. The first one is a competition algorithm where we will choose a prototype closest to the given pattern based on the information we have. At the second step, we update our weight based on a predefined distance of our prototype from the original pattern. &lt;/p&gt;
 		&lt;p&gt;Note that the *h* function that is used in the updating is analogous to gradient descent in artificial neural networks. However, normally we will use Manhattan distance here instead of Euclidean to preserve the topological structure. &lt;/p&gt;
 	&lt;/div&gt;
 
@@ -439,7 +441,7 @@ If you need some help, just &lt;a href=&quot;https://github.com/AlanFermat/twitt
 
 &lt;h2 id=&quot;can-you-show-me-an-example&quot;&gt;Can you show me an example?&lt;/h2&gt;
 
-&lt;p&gt;First we generate four sets of 3-dimensional random Gaussian vectors with 1000 points in each set, each with a variance of &lt;strong&gt;0.1&lt;/strong&gt;. Then we center the data sets at &lt;strong&gt;(0,0,0), (0,7,0), (7,0,0), and (7,7,0)&lt;/strong&gt;, respectively.&lt;/p&gt;
+&lt;p&gt;First, we generate four sets of 3-dimensional random Gaussian vectors with 1000 points in each set, each with a variance of &lt;strong&gt;0.1&lt;/strong&gt;. Then we center the data sets at &lt;strong&gt;(0,0,0), (0,7,0), (7,0,0), and (7,7,0)&lt;/strong&gt;, respectively.&lt;/p&gt;
 
 &lt;p&gt;We will train a SOM with 100 prototypes trying to cluster the data into 4 clusters.&lt;/p&gt;
 
@@ -465,7 +467,7 @@ If you need some help, just &lt;a href=&quot;https://github.com/AlanFermat/twitt
 	&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;From the result, we can see that most prototypes are bundled and gathered to four corners. Because there are no cluster in the middle, the grid is stretched out tightly making sure maximum of prototypes can match the data points optimally.&lt;/p&gt;
+&lt;p&gt;From the result, we can see that most prototypes are bundled and gathered to four corners. Because there is no cluster in the middle, the grid is stretched out tightly so that maximum of prototypes can match the data points optimally.&lt;/p&gt;
 
 &lt;p&gt;Source code is &lt;a href=&quot;https://github.com/AlanFermat/Blogs/blob/master/SOM/SOM.m&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
@@ -473,7 +475,7 @@ If you need some help, just &lt;a href=&quot;https://github.com/AlanFermat/twitt
 
 &lt;p&gt; http://www.cs.nott.ac.uk/~pszqiu/Teaching/2004/G5BNEC/G5BNEC-SOM.pdf &lt;/p&gt;
 &lt;p&gt;https://link.springer.com/referenceworkentry/10.1007%2F978-3-540-92910-9_19&lt;/p&gt;
-&lt;p&gt;https://www.sciencedirect.com/science/article/pii/S0925231298000307&lt;/p&gt;</content><author><name>Alan Yu</name></author><category term="blog" /><category term="Machine Learning" /><category term="Neural Network" /><category term="Self-organizing Map" /><category term="Unsupervised Learning" /><summary type="html">What is unsupervised learning?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/som1.jpg" /></entry><entry><title type="html">Shelper</title><link href="http://localhost:4000/Shelper/" rel="alternate" type="text/html" title="Shelper" /><published>2017-09-22T00:00:00-05:00</published><updated>2017-09-22T00:00:00-05:00</updated><id>http://localhost:4000/Shelper</id><content type="html" xml:base="http://localhost:4000/Shelper/">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/AlanFermat/Shelper/master/frontend/shelper.jpg&quot; alt=&quot;Screenshot&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;https://www.sciencedirect.com/science/article/pii/S0925231298000307&lt;/p&gt;</content><author><name>Alan Yu</name></author><category term="blog" /><category term="Machine Learning" /><category term="Neural Network" /><category term="a self-organizing Map" /><category term="Unsupervised Learning" /><summary type="html">What is unsupervised learning?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/som1.jpg" /></entry><entry><title type="html">Shelper</title><link href="http://localhost:4000/Shelper/" rel="alternate" type="text/html" title="Shelper" /><published>2017-09-22T00:00:00-05:00</published><updated>2017-09-22T00:00:00-05:00</updated><id>http://localhost:4000/Shelper</id><content type="html" xml:base="http://localhost:4000/Shelper/">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/AlanFermat/Shelper/master/frontend/shelper.jpg&quot; alt=&quot;Screenshot&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;shelper&quot;&gt;Shelper&lt;/h2&gt;
 
@@ -481,30 +483,30 @@ If you need some help, just &lt;a href=&quot;https://github.com/AlanFermat/twitt
 
 &lt;p&gt;This API connects emergency shelters with people who are looking for help during Hurricane Harvey.&lt;/p&gt;
 
-&lt;p&gt;I implemented customized Google Map API (JSON and react.js) and visualized the live data on the screen from database (MongoDB). We deployed this API as a web app via Flask.&lt;/p&gt;
+&lt;p&gt;I implemented a customized Google Map API (JSON and react.js) and visualized the live data on the screen from a database (MongoDB). We deployed this API as a web app via Flask.&lt;/p&gt;
 
 &lt;p&gt;A user can use this app to login, either seeking for active shelters or donating necessities to the nearby shelters.&lt;/p&gt;
 
 &lt;hr /&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/AlanFermat/Shelper&quot;&gt;Check it out&lt;/a&gt; here.
-If you need some help, just &lt;a href=&quot;https://github.com/AlanFermat/Shelper/issues&quot;&gt;tell me&lt;/a&gt;.&lt;/p&gt;</content><author><name>Alan Yu</name></author><category term="project" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://raw.githubusercontent.com/AlanFermat/Shelper/master/logo.png" /></entry><entry><title type="html">Neural Network – an introduction to function approximation</title><link href="http://localhost:4000/Neural-Network/" rel="alternate" type="text/html" title="Neural Network -- an introduction to function approximation" /><published>2017-07-22T00:00:00-05:00</published><updated>2017-07-22T00:00:00-05:00</updated><id>http://localhost:4000/Neural-Network</id><content type="html" xml:base="http://localhost:4000/Neural-Network/">&lt;h2 id=&quot;what-is-neural-network&quot;&gt;What is neural network?&lt;/h2&gt;
+If you need some help, just &lt;a href=&quot;https://github.com/AlanFermat/Shelper/issues&quot;&gt;tell me&lt;/a&gt;.&lt;/p&gt;</content><author><name>Alan Yu</name></author><category term="project" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://raw.githubusercontent.com/AlanFermat/Shelper/master/logo.png" /></entry><entry><title type="html">Neural Network – an introduction to function approximation</title><link href="http://localhost:4000/Neural-Network/" rel="alternate" type="text/html" title="Neural Network -- an introduction to function approximation" /><published>2017-07-22T00:00:00-05:00</published><updated>2017-07-22T00:00:00-05:00</updated><id>http://localhost:4000/Neural-Network</id><content type="html" xml:base="http://localhost:4000/Neural-Network/">&lt;h2 id=&quot;what-is-a-neural-network&quot;&gt;What is a neural network?&lt;/h2&gt;
 
 &lt;h3 id=&quot;background&quot;&gt;Background&lt;/h3&gt;
 
-&lt;p&gt;As computer sciecne students, we often heard these fancy stuffs in life: image classification, pattern recognition, convolutional neural network, machine learning, etc. Sometimes, we are so overwhelmed by the jargons in the field that we do not wanna explore the field ourselves.&lt;/p&gt;
+&lt;p&gt;As computer science students, we often heard these fancy stuff in life: image classification, pattern recognition, convolutional neural network, machine learning, etc. Sometimes, we are so overwhelmed by the jargons in the field that we do not wanna explore the field ourselves.&lt;/p&gt;
 
 &lt;p&gt;However, we are all human beings living in the 21st century – &lt;a href=&quot;https://www.tandfonline.com/doi/full/10.1080/20964471.2017.1397411&quot;&gt; the era of big data &lt;/a&gt;, making techniques such as machine learning useful and meaningful for data analysis.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Machine_learning&quot;&gt;Machine learning&lt;/a&gt; is a century-old field that recently became tremendously popular due to the demand for convenient tools facilitates data analysis. It has two intersecting subfields based on techniques, namely statistical machine lerning and neural network. Whereas statistical machine learning involves a heavy load of statistics, neural networks stress more on designing and parameter-tuning.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Machine_learning&quot;&gt;Machine learning&lt;/a&gt; is a century-old field that recently became tremendously popular due to the demand for convenient tools facilitates data analysis. It has two intersecting subfields based on techniques, namely statistical machine learning and neural network. Whereas statistical machine learning involves a heavy load of statistics, neural networks stress more on designing and parameter-tuning.&lt;/p&gt;
 
 &lt;p&gt;Based on the data we have, we can also divide machine learning into &lt;a href=&quot;https://en.wikipedia.org/wiki/Supervised_learning&quot;&gt;supervised&lt;/a&gt; and &lt;a href=&quot;https://en.wikipedia.org/wiki/Unsupervised_learning&quot;&gt;unsupervised learning&lt;/a&gt;. While supervised learning is to figure out the pattern with the guidance of a given standard, unsupervised learning is to recognize the pattern without any additional information.&lt;/p&gt;
 
-&lt;p&gt;Neural network is one group of algorithms used for machine learning that models the data using graphs of artificial neurons. It tries to mimic how the neurons in human brains work.&lt;/p&gt;
+&lt;p&gt;The neural network is one group of algorithms used for machine learning that models the data using graphs of artificial neurons. It tries to mimic how the neurons in human brains work.&lt;/p&gt;
 
-&lt;p&gt;In this post, we will focus majorly on applying neural network to function approximation. Since we will be informed of what our outputs should look like, we will be discussing about supervised neural network techniques only. Moreover, for the sake of illustration we only focus on Artificial Neural Network architecture.&lt;/p&gt;
+&lt;p&gt;In this post, we will focus majorly on applying the neural network to function approximation. Since we will be informed of what our outputs should look like, we will be discussing about supervised neural network techniques only. Moreover, for the sake of illustration, we only focus on Artificial Neural Network architecture.&lt;/p&gt;
 
-&lt;p&gt;For those who are interested in Long-short Term Memory Neural Network, Convolutional Neural Network and Generative Adversarial Network, please check out the links below:&lt;/p&gt;
+&lt;p&gt;For those who are interested in Long-short Term Memory Neural Network, Convolutional Neural Network, and Generative Adversarial Network, please check out the links below:&lt;/p&gt;
 
 &lt;ul&gt; 
 	&lt;li&gt; Long-short Term Memory: 
@@ -531,9 +533,9 @@ If you need some help, just &lt;a href=&quot;https://github.com/AlanFermat/Shelp
 		&lt;figcaption class=&quot;caption&quot;&gt;Illustration for one layer&lt;/figcaption&gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;toright&quot;&gt;
-		&lt;p&gt; A neuron network is a layer-by-layer structure. At each layer, it consists of processing elements (referred as PEs afterwards) and transfer functions. &lt;/p&gt;
-		&lt;p&gt; Usually, the first layer of a network is called input layer, the last layer is called output layer and the layers in between are hidden layers. &lt;/p&gt;
-		&lt;p&gt; The architecture of a neuron network is composed of the way that these layers combine together. For example, a network with 3-3-1 is a neural network where the first and second layer consist of 3 PEs and the output layer is of 1 PE. Note that the neural network on the left is of the topology N-1 with only two layers, one input layer and one output layer. &lt;/p&gt;
+		&lt;p&gt; A neuron network is a layer-by-layer structure. At each layer, it consists of processing elements (referred to as PEs afterward) and transfer functions. &lt;/p&gt;
+		&lt;p&gt; Usually, the first layer of a network is called the input layer, the last layer is called the output layer and the layers in between are hidden layers. &lt;/p&gt;
+		&lt;p&gt; The architecture of a neuron network is composed of the way that these layers combine together. For example, a network with 3-3-1 is a neural network where the first and second layer consist of 3 PEs and the output layer is of 1 PE. Note that the neural network on the left is of the topology N-1 with only two layers, one input layer, and one output layer. &lt;/p&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
 
@@ -674,9 +676,11 @@ If you need some help, just &lt;a href=&quot;https://github.com/AlanFermat/Shelp
 &lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
 &lt;p&gt;https://www.tandfonline.com/doi/full/10.1080/20964471.2017.1397411&lt;/p&gt;
 
-&lt;p&gt;http://math.uchicago.edu/~may/REU2016/REUPapers/Gaddy.pdf&lt;/p&gt;</content><author><name>Alan Yu</name></author><category term="blog" /><category term="Machine Learning" /><category term="Neural Network" /><category term="Function Approximation" /><category term="Supervised Learning" /><summary type="html">What is neural network?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/nnTitle.jpg" /></entry><entry><title type="html">Text mining for finding the best place pursuing medical research</title><link href="http://localhost:4000/text-mining-for-medical-research/" rel="alternate" type="text/html" title="Text mining for finding the best place pursuing medical research" /><published>2016-04-11T00:00:00-05:00</published><updated>2016-04-11T00:00:00-05:00</updated><id>http://localhost:4000/text-mining-for-medical-research</id><content type="html" xml:base="http://localhost:4000/text-mining-for-medical-research/">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/AlanFermat/Text-mining-for-medical-research/master/wordcloud.jpg&quot; alt=&quot;Screenshot&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;http://math.uchicago.edu/~may/REU2016/REUPapers/Gaddy.pdf&lt;/p&gt;</content><author><name>Alan Yu</name></author><category term="blog" /><category term="Machine Learning" /><category term="Neural Network" /><category term="Function Approximation" /><category term="Supervised Learning" /><summary type="html">What is a neural network?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/nnTitle.jpg" /></entry><entry><title type="html">Text mining for finding the best place to pursue medical research</title><link href="http://localhost:4000/text-mining-for-medical-research/" rel="alternate" type="text/html" title="Text mining for finding the best place to pursue medical research" /><published>2016-04-11T00:00:00-05:00</published><updated>2016-04-11T00:00:00-05:00</updated><id>http://localhost:4000/text-mining-for-medical-research</id><content type="html" xml:base="http://localhost:4000/text-mining-for-medical-research/">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/AlanFermat/Text-mining-for-medical-research/master/wordcloud.jpg&quot; alt=&quot;Screenshot&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;text-mining-for-finding-the-best-place-pursuing-medical-research&quot;&gt;Text mining for finding the best place pursuing medical research&lt;/h2&gt;
+
+&lt;p&gt;This is an open-end project that I worked with a team in a Statistic class at Rice University.&lt;/p&gt;
 
 &lt;h3 id=&quot;where-is-the-best-place-for-medical-research&quot;&gt;Where is the best place for medical research?&lt;/h3&gt;
 
@@ -688,9 +692,9 @@ If you need some help, just &lt;a href=&quot;https://github.com/AlanFermat/Shelp
 
 &lt;p&gt;Based on this high-level analysis, we find location is the most important factor. We deep dive into location, specifically city-level analysis.&lt;/p&gt;
 
-&lt;p&gt;We breakdown the importance into three categories, which we call: access to talent, access to resources, and access to funding. Based on these three dimensions, we rank the top 11 cities. Based on our ranking system. New York is the top city, while Seattle is the bottom among the 11 cities.&lt;/p&gt;
+&lt;p&gt;We breakdown the importance into three categories, which we call: access to talent, access to resources, and access to funding. Based on these three dimensions, we rank the top 11 cities. Based on our ranking system. New York is the top city, while Seattle is the bottom of the 11 cities.&lt;/p&gt;
 
-&lt;p&gt;The results are presented beautifully via ggplot and wordcloud using R!&lt;/p&gt;
+&lt;p&gt;The results are presented beautifully via &lt;em&gt;ggplot&lt;/em&gt; and &lt;em&gt;wordcloud&lt;/em&gt; using R!&lt;/p&gt;
 
 &lt;hr /&gt;
 
